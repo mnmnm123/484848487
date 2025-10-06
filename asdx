@@ -92,7 +92,7 @@ local CloseButtonCorner = Instance.new("UICorner")
 
 CloseButton.Name = "CloseButton"
 CloseButton.Parent = Main 
-CloseButton.BackgroundColor3 = Color3.fromRGB(220, 38, 38) 
+CloseButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0) 
 CloseButton.Position = UDim2.new(0, 5, 0, 5) 
 CloseButton.Size = UDim2.new(0, 25, 0, 25) 
 CloseButton.Font = Enum.Font.Gotham
