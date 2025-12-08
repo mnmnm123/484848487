@@ -165,7 +165,7 @@ end)
     ActualSide.Position = UDim2.new(0, 0, 0.172972977, 0)
     ActualSide.Size = UDim2.new(0, 112, 0, 297)
     ActualSide.CanvasSize = UDim2.new(0,0,0,0)
-    ActualSide.ScrollBarThickness = 8
+    ActualSide.ScrollBarThickness = 14
 
     ActualSideListLayout.Name = "ActualSideListLayout"
     ActualSideListLayout.Parent = ActualSide
@@ -210,9 +210,10 @@ FloatToggle.Position = UDim2.new(0.02, 0, 0.5, 0)
 FloatToggle.Size = UDim2.new(0, 45, 0, 45)
 FloatToggle.BackgroundColor3 = Color3.fromRGB(31, 30, 46)
 FloatToggle.Image = "rbxassetid://118278687485035"
-FloatToggle.ScaleType = Enum.ScaleType.Slice
-FloatToggle.SliceCenter = Rect.new(100, 100, 100, 100)
-FloatToggle.SliceScale = 0.15
+FloatToggle.ScaleType = Enum.ScaleType.Fit
+FloatToggle.SliceCenter = Rect.new(0, 0, 0, 0)
+FloatToggle.SliceScale = 1
+FloatToggle.BorderSizePixel = 0
 FloatCorner.CornerRadius = UDim.new(1, 0)
 FloatCorner.Parent = FloatToggle
 Library:Drag(FloatToggle)
