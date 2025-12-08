@@ -201,37 +201,44 @@ end)
     Tabs.Name = "Tabs"
     Tabs.Parent = TabHolder
 
-    Library:Drag(Main)
-local FloatToggle = Instance.new("ImageButton")
+Library:Drag(Main)
+local FloatToggle = Instance.new("TextButton")
 local FloatCorner = Instance.new("UICorner")
 FloatToggle.Name = "FloatWindowToggle"
 FloatToggle.Parent = ScreenGui
 FloatToggle.Position = UDim2.new(0.02, 0, 0.5, 0)
-FloatToggle.Size = UDim2.new(0, 50, 0, 50)
-FloatToggle.BackgroundColor3 = Color3.fromRGB(31, 30, 46)
-FloatToggle.Image = "rbxassetid://118278687485035"
-FloatToggle.ScaleType = Enum.ScaleType.Fit
-FloatToggle.SliceCenter = Rect.new(10, 10, 35, 35)
-FloatToggle.SliceScale = 1
-FloatToggle.BorderSizePixel = 0
-FloatCorner.CornerRadius = UDim.new(1, 0)
+FloatToggle.Size = UDim2.new(0, 45, 0, 45)
+FloatToggle.BackgroundColor3 = Color3.fromRGB(50, 150, 50)
+FloatToggle.Text = "开"
+FloatToggle.TextColor3 = Color3.fromRGB(255,255,255)
+FloatToggle.TextScaled = true
+FloatCorner.CornerRadius = UDim.new(0.1, 0)
 FloatCorner.Parent = FloatToggle
-Library:Drag(FloatToggle)
+
 FloatToggle.MouseButton1Click:Connect(function()
     Main.Visible = not Main.Visible
+    if Main.Visible then
+        FloatToggle.Text = "关"
+        FloatToggle.BackgroundColor3 = Color3.fromRGB(200, 50, 50)
+    else
+        FloatToggle.Text = "开"
+        FloatToggle.BackgroundColor3 = Color3.fromRGB(50, 150, 50)
+    end
 end)
+
 FloatToggle.MouseEnter:Connect(function()
     game:GetService("TweenService"):Create(FloatToggle, TweenInfo.new(0.1), {
-        Size = UDim2.new(0, 50, 0, 50),
-       BackgroundColor3 = Color3.fromRGB(40, 39, 56)
+        Size = UDim2.new(0, 48, 0, 48),
+        BackgroundColor3 = Main.Visible and Color3.fromRGB(220, 70, 70) or Color3.fromRGB(70, 170, 70)
     }):Play()
 end)
 FloatToggle.MouseLeave:Connect(function()
     game:GetService("TweenService"):Create(FloatToggle, TweenInfo.new(0.1), {
         Size = UDim2.new(0, 45, 0, 45),
-       BackgroundColor3 = Color3.fromRGB(31, 30, 46)
+        BackgroundColor3 = Main.Visible and Color3.fromRGB(200, 50, 50) or Color3.fromRGB(50, 150, 50)
     }):Play()
 end)
+
     local xTabs = {}
     
     function xTabs:Tab(Name,xVisible)
