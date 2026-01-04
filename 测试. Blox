@@ -1,0 +1,208 @@
+local SCRIPT = [[
+local Players = game:GetService("Players")
+local RS = game:GetService("ReplicatedStorage")
+local Run = game:GetService("RunService")
+local player = Players.LocalPlayer
+local TP = RS.Runtime.Actors.Player_4155353481.Functions.TeleportScene
+local WORLD1 = 87188889493383
+local WORLD2 = 133117948363067
+local BOSS_NAME = "1_1_7"
+local isAttacking = true
+local attackTask = nil
+local JumpEnabled = true
+
+local function startContinuousAttack()
+    if attackTask then task.cancel(attackTask) end
+    isAttacking = true
+    attackTask = task.spawn(function()
+        while isAttacking do
+            local events = RS:FindFirstChild("Events")
+            if events then
+                local attackNames = {
+                    "SwingTool", "UseTool", "Attack", "Hit", "Damage",
+                    "Swing", "SwingShovel", "Dig", "Mine", "Chop",
+                    "ToolAction", "ActivateTool", "SwingWeapon"
+                }
+                for _, name in pairs(attackNames) do
+                    local event = events:FindFirstChild(name)
+                    if event then
+                        pcall(function() event:FireServer() end)
+                    end
+                end
+            end
+            local character = player.Character
+            if character then
+                for _, tool in pairs(character:GetChildren()) do
+                    if tool:IsA("Tool") then
+                        pcall(function() tool:Activate() end)
+                    end
+                end
+            end
+            task.wait(3)
+        end
+    end)
+end
+
+local function stopContinuousAttack()
+    isAttacking = false
+    if attackTask then
+        task.cancel(attackTask)
+        attackTask = nil
+    end
+end
+
+local function autoJump()
+    task.spawn(function()
+        while true do
+            local char = player.Character
+            if JumpEnabled and char then
+                local hum = char:FindFirstChildOfClass("Humanoid")
+                if hum and hum.Health > 0 then
+                    hum:ChangeState(Enum.HumanoidStateType.Jumping)
+                end
+            end
+            task.wait(5)
+        end
+    end)
+end
+
+local function waitForStable()
+    local char = player.Character or player.CharacterAdded:Wait()
+    local hum = char:WaitForChild("Humanoid")
+    char:WaitForChild("HumanoidRootPart")
+    repeat
+        Run.Heartbeat:Wait()
+    until hum.FloorMaterial ~= Enum.Material.Air
+end
+
+local function findBoss()
+    for _,v in ipairs(workspace:GetDescendants()) do
+        if v.Name == BOSS_NAME and v:IsA("Model") then
+            return v
+        end
+    end
+end
+
+local function bossAlive(boss)
+    if not boss then return false end
+    if not boss:IsDescendantOf(workspace) then return false end
+    local hum = boss:FindFirstChildOfClass("Humanoid")
+    if not hum or hum.Health <= 0 then return false end
+    local root = boss:FindFirstChild("HumanoidRootPart") or boss.PrimaryPart
+    if not root then return false end
+    return true
+end
+
+local function killBoss(boss)
+    local char = player.Character or player.CharacterAdded:Wait()
+    local hum = char:WaitForChild("Humanoid")
+    local root = char:WaitForChild("HumanoidRootPart")
+    hum.WalkSpeed = 45
+    local conn
+    conn = Run.RenderStepped:Connect(function()
+        if not bossAlive(boss) then
+            conn:Disconnect()
+            hum.WalkSpeed = 16
+            hum:Move(Vector3.new(0,0,0))
+            return
+        end
+        local bp = boss:FindFirstChild("HumanoidRootPart") or boss.PrimaryPart
+        if bp then
+            local dir = bp.Position - root.Position
+            if dir.Magnitude > 3 then
+                hum:Move(dir.Unit)
+            end
+        end
+    end)
+    repeat Run.Heartbeat:Wait() until not bossAlive(boss)
+    if conn then conn:Disconnect() end
+end
+
+local function main()
+    startContinuousAttack()
+    autoJump()
+    if game.PlaceId == WORLD1 then
+        local char = player.Character or player.CharacterAdded:Wait()
+        char:WaitForChild("HumanoidRootPart")
+        task.wait(1)
+        local boss = findBoss()
+        if boss then
+            killBoss(boss)
+        end
+        task.wait(1)
+        pcall(function()
+            TP:InvokeServer("World2")
+        end)
+    elseif game.PlaceId == WORLD2 then
+        pcall(function()
+            TP:InvokeServer("World1")
+        end)
+    end
+end
+
+task.spawn(function()
+    task.wait(2)
+    main()
+end)
+
+if typeof(queue_on_teleport) == "function" then
+    queue_on_teleport("isAttacking = true; startContinuousAttack()")
+end
+]]
+if queue_on_teleport then
+    queue_on_teleport(SCRIPT)
+end
+loadstring(SCRIPT)()
+local WOW_player = game:GetService("Players").LocalPlayer
+ 
+getgenv().WOW_AutoFireLootPrompts = true
+getgenv().WOW_WalkSpeed = 18
+getgenv().WOW_FireRange = 100
+
+local collectThread, speedThread
+
+local function findLootContainer()
+    local runtime = workspace:FindFirstChild("Runtime")
+    local loot = runtime and runtime:FindFirstChild("LootPoints")
+    return loot or workspace:FindFirstChild("LootPoints")
+end
+ 
+local function maintainSpeed()
+    while task.wait(0.1) do
+        local char = WOW_player.Character
+        if char then
+            local hum = char:FindFirstChildOfClass("Humanoid")
+            if hum then hum.WalkSpeed = getgenv().WOW_WalkSpeed end
+        end
+    end
+end
+  
+local function collectLoop()
+    while task.wait(0.01) do
+        if not getgenv().WOW_AutoFireLootPrompts then break end
+        
+        local character = WOW_player.Character
+        if not character then continue end
+        
+        local rootPart = character:FindFirstChild("HumanoidRootPart")
+        if not rootPart then continue end
+        
+        local lootContainer = findLootContainer()
+        if not lootContainer then continue end
+        
+        for _, obj in ipairs(lootContainer:GetDescendants()) do
+            if obj:IsA("ProximityPrompt") then
+                local parent = obj.Parent
+                if not (parent and parent:IsA("BasePart")) then continue end
+                
+                local dist = (parent.Position - rootPart.Position).Magnitude
+                if dist <= getgenv().WOW_FireRange then
+                    fireproximityprompt(obj)
+                end
+            end
+        end
+    end
+end
+
+collectThread = task.spawn(collectLoop)
+speedThread = task.spawn(maintainSpeed)
