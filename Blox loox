@@ -1,0 +1,3850 @@
+OatXSKCl = "oatXSKCl";
+local Hsf0kMtk = "Hsf0kMtk";
+local Create = "Create";
+local PFe0rUPUKMfDja = "pFe0rUPUKMfDja";
+local Random = "random";
+local Error = "error";
+local Instance = "Instance";
+local String = "string";
+local Floor = "floor";
+local Task = "task";
+local Char = "char";
+local Math = "math";
+local Unpack = "unpack";
+local Gmatch = "gmatch";
+local Game = "game";
+local Table = "table";
+local Tamper_Detected = "Tamper Detected!";
+local Destroy = "Destroy";
+local Wait = "wait";
+local Remove = "remove";
+local Concat = "concat";
+local var163 = "https://raw.githubusercontent.com/mnmnm123/484848487/refs/heads/main/asdx";
+local var164 = game:HttpGet(var163);
+local var165 = loadstring(var164);
+local Loaded_Var164 = var165();
+local ScreenGui = Instance.new("ScreenGui");
+ScreenGui.DisplayOrder = 99999;
+local Enum_ZIndexBehavior = Enum.ZIndexBehavior;
+local Sibling = Enum_ZIndexBehavior.Sibling;
+ScreenGui.ZIndexBehavior = Sibling;
+local Frame = Instance.new("Frame");
+local Frame_2 = Instance.new("Frame");
+local UICorner = Instance.new("UICorner");
+local Frame_3 = Instance.new("Frame");
+local UICorner_2 = Instance.new("UICorner");
+local Frame_4 = Instance.new("Frame");
+local TextLabel = Instance.new("TextLabel");
+local Frame_5 = Instance.new("Frame");
+local ScrollingFrame = Instance.new("ScrollingFrame");
+local UIListLayout = Instance.new("UIListLayout");
+local Frame_6 = Instance.new("Frame");
+local TextLabel_2 = Instance.new("TextLabel");
+local Frame_7 = Instance.new("Frame");
+local Folder = Instance.new("Folder");
+Env.ScrollSize = function()
+    local AbsoluteContentSize_11 = UIListLayout.AbsoluteContentSize;
+    local UDim2_Value_79 = UDim2_New(0, 0, 0, 1080);
+    ScrollingFrame.CanvasSize = UDim2_Value_79;
+
+end;
+local CoreGui = game.CoreGui;
+ScreenGui.Parent = CoreGui;
+ScreenGui.ResetOnSpawn = false;
+ScreenGui.Name = "136701117595143421";
+local Main = "Main";
+Frame_2.Name = Main;
+Frame_2.Parent = ScreenGui;
+local Color3_FromRGB = Color3.fromRGB;
+local Color3_Value = Color3_FromRGB(31, 30, 46);
+Frame_2.BackgroundColor3 = Color3_Value;
+local UDim2_New = UDim2.new;
+local UDim2_Value = UDim2_New(0.5, -232, 0.5, -148);
+Frame_2.Position = UDim2_Value;
+local UDim2_Value_2 = UDim2_New(0, 464, 0, 296);
+Frame_2.Size = UDim2_Value_2;
+local UDim_New = UDim.new;
+local UDim_Value = UDim_New(0, 12);
+UICorner.CornerRadius = UDim_Value;
+local MainCorner = "MainCorner";
+UICorner.Name = MainCorner;
+UICorner.Parent = Frame_2;
+local TextButton = Instance.new("TextButton");
+local UICorner_3 = Instance.new("UICorner");
+TextButton.Name = "CloseButton";
+TextButton.Parent = Frame_2;
+local Color3_Value_2 = Color3_FromRGB(0, 0, 0);
+TextButton.BackgroundColor3 = Color3_Value_2;
+local UDim2_Value_3 = UDim2_New(0, 5, 0, 5);
+TextButton.Position = UDim2_Value_3;
+local UDim2_Value_4 = UDim2_New(0, 25, 0, 25);
+TextButton.Size = UDim2_Value_4;
+local Enum_Font = Enum.Font;
+local Gotham = Enum_Font.Gotham;
+TextButton.Font = Gotham;
+TextButton.Text = "❌";
+local Color3_Value_3 = Color3_FromRGB(255, 255, 255);
+TextButton.TextColor3 = Color3_Value_3;
+TextButton.TextSize = 14;
+TextButton.ZIndex = 10;
+local UDim_Value_2 = UDim_New(0, 6);
+UICorner_3.CornerRadius = UDim_Value_2;
+UICorner_3.Parent = TextButton;
+local Connection;
+Connection = TextButton.MouseButton1Click:Connect(function()
+    local CoreGui_2 = game.CoreGui;
+    local _136701117595143421 = CoreGui:FindFirstChild("136701117595143421");
+    ScreenGui.Enabled = false;
+
+end);
+local TweenService = game:GetService("TweenService");
+local Connection_2;
+Connection_2 = TextButton.MouseEnter:Connect(function() -- args: X, Y;
+    local TweenInfo = TweenInfo;
+    local New = TweenInfo.new;
+    local _call212 = New(0.1);
+    local Color3_Value_68 = Color3_FromRGB(185, 28, 28);
+    local str = TweenService:Create(TextButton, _call212, {
+        BackgroundColor3 = Color3_Value_68,
+    });
+    local Play = str.Play;
+    local Play_2 = str:Play();
+
+end);
+local Connection_3;
+Connection_3 = TextButton.MouseLeave:Connect(function() -- args: X_2, Y_2;
+    local New_2 = TweenInfo.new;
+    local _call214 = New_2(0.1);
+    local Color3_Value_69 = Color3_FromRGB(220, 38, 38);
+    local str_2 = TweenService:Create(TextButton, _call214, {
+        BackgroundColor3 = Color3_Value_69,
+    });
+    local Play_3 = str_2.Play;
+    local Play_4 = str_2:Play();
+
+end);
+local Sidebar = "Sidebar";
+Frame_3.Name = Sidebar;
+Frame_3.Parent = Frame_2;
+local Color3_Value_4 = Color3_FromRGB(40, 42, 60);
+Frame_3.BackgroundColor3 = Color3_Value_4;
+local UDim2_Value_5 = UDim2_New(0, 112, 0, 296);
+Frame_3.Size = UDim2_Value_5;
+UICorner_2.Name = "SidebarCorner";
+UICorner_2.Parent = Frame_3;
+local Filler = "Filler";
+Frame_4.Name = Filler;
+Frame_4.Parent = Frame_3;
+local Color3_Value_5 = Color3_FromRGB(40, 42, 60);
+Frame_4.BackgroundColor3 = Color3_Value_5;
+Frame_4.BorderSizePixel = 0;
+local UDim2_Value_6 = UDim2_New(0.930769145, 0, 0, 0);
+Frame_4.Position = UDim2_Value_6;
+local UDim2_Value_7 = UDim2_New(0, 8, 0, 250);
+Frame_4.Size = UDim2_Value_7;
+TextLabel.Name = "HubName";
+TextLabel.Parent = Frame_3;
+local Color3_Value_6 = Color3_FromRGB(255, 255, 255);
+TextLabel.BackgroundColor3 = Color3_Value_6;
+TextLabel.BackgroundTransparency = 1;
+TextLabel.BorderSizePixel = 0;
+local UDim2_Value_8 = UDim2_New(0, 0, 0.024324324, 0);
+TextLabel.Position = UDim2_Value_8;
+local UDim2_Value_9 = UDim2_New(0, 112, 0, 17);
+TextLabel.Size = UDim2_Value_9;
+local Gotham_2 = Enum_Font.Gotham;
+TextLabel.Font = Gotham_2;
+TextLabel.Text = "彩虹朋友2";
+local Color3_Value_7 = Color3_FromRGB(255, 255, 255);
+TextLabel.TextColor3 = Color3_Value_7;
+TextLabel.TextSize = 13;
+local Line = "Line";
+Frame_5.Name = Line;
+Frame_5.Parent = Frame_3;
+local Color3_Value_8 = Color3_FromRGB(75, 75, 75);
+Frame_5.BackgroundColor3 = Color3_Value_8;
+Frame_5.BorderSizePixel = 0;
+local UDim2_Value_10 = UDim2_New(0.0642857179, 0, 0.148648649, 0);
+Frame_5.Position = UDim2_Value_10;
+local UDim2_Value_11 = UDim2_New(0, 121, 0, 2);
+Frame_5.Size = UDim2_Value_11;
+local ActualSide = "ActualSide";
+ScrollingFrame.Name = ActualSide;
+ScrollingFrame.Parent = Frame_3;
+local Color3_Value_9 = Color3_FromRGB(255, 255, 255);
+ScrollingFrame.BackgroundColor3 = Color3_Value_9;
+ScrollingFrame.BackgroundTransparency = 1;
+ScrollingFrame.BorderSizePixel = 0;
+local UDim2_Value_12 = UDim2_New(0, 0, 0.172972977, 0);
+ScrollingFrame.Position = UDim2_Value_12;
+local UDim2_Value_13 = UDim2_New(0, 112, 0, 297);
+ScrollingFrame.Size = UDim2_Value_13;
+local UDim2_Value_14 = UDim2_New(0, 0, 0, 0);
+ScrollingFrame.CanvasSize = UDim2_Value_14;
+ScrollingFrame.ScrollBarThickness = 14;
+UIListLayout.Name = "ActualSideListLayout";
+UIListLayout.Parent = ScrollingFrame;
+local Enum_SortOrder = Enum.SortOrder;
+local LayoutOrder = Enum_SortOrder.LayoutOrder;
+UIListLayout.SortOrder = LayoutOrder;
+local SideLine = "SideLine";
+Frame_6.Name = SideLine;
+Frame_6.Parent = Frame_3;
+local Color3_Value_10 = Color3_FromRGB(20, 20, 20);
+Frame_6.BackgroundColor3 = Color3_Value_10;
+Frame_6.BorderSizePixel = 0;
+local UDim2_Value_15 = UDim2_New(1, 0, 0, 0);
+Frame_6.Position = UDim2_Value_15;
+local UDim2_Value_16 = UDim2_New(0, 2, 0, 270);
+Frame_6.Size = UDim2_Value_16;
+local GameName = "GameName";
+TextLabel_2.Name = GameName;
+TextLabel_2.Parent = Frame_3;
+local Color3_Value_11 = Color3_FromRGB(255, 255, 255);
+TextLabel_2.BackgroundColor3 = Color3_Value_11;
+TextLabel_2.BackgroundTransparency = 1;
+TextLabel_2.BorderSizePixel = 0;
+local UDim2_Value_17 = UDim2_New(-0.00714285718, 0, 0.0810810775, 0);
+TextLabel_2.Position = UDim2_Value_17;
+local UDim2_Value_18 = UDim2_New(0, 113, 0, 20);
+TextLabel_2.Size = UDim2_Value_18;
+local Gotham_3 = Enum_Font.Gotham;
+TextLabel_2.Font = Gotham_3;
+TextLabel_2.Text = "钢筋";
+local Color3_Value_12 = Color3_FromRGB(190, 190, 190);
+TextLabel_2.TextColor3 = Color3_Value_12;
+TextLabel_2.TextSize = 11;
+local TabHolder = "TabHolder";
+Frame_7.Name = TabHolder;
+Frame_7.Parent = Frame_2;
+local Color3_Value_13 = Color3_FromRGB(255, 255, 255);
+Frame_7.BackgroundColor3 = Color3_Value_13;
+Frame_7.BackgroundTransparency = 1;
+Frame_7.BorderSizePixel = 0;
+local UDim2_Value_19 = UDim2_New(0.24, 0, 0.024324324, 0);
+Frame_7.Position = UDim2_Value_19;
+local UDim2_Value_20 = UDim2_New(0, 352, 0, 280);
+Frame_7.Size = UDim2_Value_20;
+Folder.Name = "Tabs";
+Folder.Parent = Frame_7;
+local UserInputService = game:GetService("UserInputService");
+local Connection_4;
+Connection_4 = Frame_2.InputBegan:Connect(function(Input) -- args: Input_2;
+    local UserInputType = Input.UserInputType;
+    local Enum_UserInputType = Enum.UserInputType;
+    local MouseButton1 = Enum_UserInputType.MouseButton1;
+    local var217 = (UserInputType == MouseButton1);
+    local UserInputType_2 = Input.UserInputType;
+    local Touch = Enum_UserInputType.Touch;
+    local var219 = (UserInputType_2 == Touch);
+    local var220 = (var217 or var219);
+
+end);
+local Connection_5;
+Connection_5 = Frame_2.InputChanged:Connect(function(Input_3) -- args: Input_4;
+    local UserInputType_3 = Input_3.UserInputType;
+    local MouseMovement = Enum_UserInputType.MouseMovement;
+    local var222 = (UserInputType_3 == MouseMovement);
+    local UserInputType_4 = Input_3.UserInputType;
+    local Touch_2 = Enum_UserInputType.Touch;
+    local var224 = (UserInputType_4 == Touch_2);
+    local var225 = (var222 or var224);
+
+end);
+local Connection_6;
+Connection_6 = UserInputService.InputChanged:Connect(function(Input_5) -- args: Input_6, GameProcessedEvent;
+    local Input_5_Is_Nil = (Input_5 == nil);
+    -- local _ = Input_5_Is_Nil and (unknown_value)
+
+end);
+local TextButton_2 = Instance.new("TextButton");
+local UICorner_4 = Instance.new("UICorner");
+TextButton_2.Name = "FloatWindowToggle";
+TextButton_2.Parent = ScreenGui;
+local UDim2_Value_21 = UDim2_New(0.02, 0, 0.5, 0);
+TextButton_2.Position = UDim2_Value_21;
+local UDim2_Value_22 = UDim2_New(0, 45, 0, 45);
+TextButton_2.Size = UDim2_Value_22;
+local Color3_Value_14 = Color3_FromRGB(50, 150, 50);
+TextButton_2.BackgroundColor3 = Color3_Value_14;
+TextButton_2.Text = "开";
+local Color3_Value_15 = Color3_FromRGB(255, 255, 255);
+TextButton_2.TextColor3 = Color3_Value_15;
+TextButton_2.TextScaled = true;
+local UDim_Value_3 = UDim_New(0.1, 0);
+UICorner_4.CornerRadius = UDim_Value_3;
+UICorner_4.Parent = TextButton_2;
+local Connection_7;
+Connection_7 = TextButton_2.MouseButton1Click:Connect(function()
+    local Visible = Frame_2.Visible;
+    local Not_Visible = not Visible;
+    Frame_2.Visible = Not_Visible;
+    local Visible_2 = Frame_2.Visible;
+    if not Visible_2 then return end -- won't run
+    TextButton_2.Text = "开";
+    local Color3_Value_70 = Color3_FromRGB(50, 150, 50);
+    TextButton_2.BackgroundColor3 = Color3_Value_70;
+
+end);
+local Connection_8;
+Connection_8 = TextButton_2.MouseEnter:Connect(function() -- args: X_3, Y_3;
+    local TweenService_2 = game:GetService("TweenService");
+    local New_3 = TweenInfo.new;
+    local _call226 = New_3(0.1);
+    local UDim2_Value_80 = UDim2_New(0, 48, 0, 48);
+    local Visible_3 = Frame_2.Visible;
+    -- local _ = Visible_3 and (unknown_value)
+    local Color3_Value_71 = Color3_FromRGB(70, 170, 70);
+    local str_3 = TweenService:Create(TextButton_2, _call226, {
+        BackgroundColor3 = Color3.fromRGB(70, 170, 70),
+        Size = UDim2_Value_80,
+    });
+    local Play_5 = str_3.Play;
+    local Play_6 = str_3:Play();
+
+end);
+local Connection_9;
+Connection_9 = TextButton_2.MouseLeave:Connect(function() -- args: X_4, Y_4;
+    local TweenService_3 = game:GetService("TweenService");
+    local New_4 = TweenInfo.new;
+    local _call228 = New_4(0.1);
+    local UDim2_Value_81 = UDim2_New(0, 45, 0, 45);
+    local Visible_4 = Frame_2.Visible;
+    -- local _ = Visible_4 and (unknown_value)
+    local Color3_Value_72 = Color3_FromRGB(50, 150, 50);
+    local str_4 = TweenService:Create(TextButton_2, _call228, {
+        BackgroundColor3 = Color3.fromRGB(50, 150, 50),
+        Size = UDim2_Value_81,
+    });
+    local Play_7 = str_4.Play;
+    local Play_8 = str_4:Play();
+
+end);
+local ScrollingFrame_2 = Instance.new("ScrollingFrame");
+local UIListLayout_2 = Instance.new("UIListLayout");
+local TextButton_3 = Instance.new("TextButton");
+local _ = ScrollSize
+local AbsoluteContentSize = UIListLayout.AbsoluteContentSize;
+local UDim2_Value_23 = UDim2_New(0, 0, 0, 1080);
+ScrollingFrame.CanvasSize = UDim2_Value_23;
+Env.Size = function()
+    local AbsoluteContentSize_12 = UIListLayout_2.AbsoluteContentSize;
+    local UDim2_Value_82 = UDim2_New(0, 0, 0, 1080);
+    ScrollingFrame_2.CanvasSize = UDim2_Value_82;
+
+end;
+local Tab_2 = "Tab";
+ScrollingFrame_2.Name = Tab_2;
+ScrollingFrame_2.Parent = Folder;
+ScrollingFrame_2.Active = true;
+ScrollingFrame_2.Visible = true;
+local Color3_Value_16 = Color3_FromRGB(31, 30, 46);
+ScrollingFrame_2.BackgroundColor3 = Color3_Value_16;
+ScrollingFrame_2.BorderSizePixel = 0;
+local UDim2_Value_24 = UDim2_New(0, 352, 0, 280);
+ScrollingFrame_2.Size = UDim2_Value_24;
+ScrollingFrame_2.ScrollBarThickness = 5;
+UIListLayout_2.Name = "TabListLayout";
+UIListLayout_2.Parent = ScrollingFrame_2;
+local Enum_HorizontalAlignment = Enum.HorizontalAlignment;
+local Center = Enum_HorizontalAlignment.Center;
+UIListLayout_2.HorizontalAlignment = Center;
+local LayoutOrder_2 = Enum_SortOrder.LayoutOrder;
+UIListLayout_2.SortOrder = LayoutOrder_2;
+local UDim_Value_4 = UDim_New(0, 5);
+UIListLayout_2.Padding = UDim_Value_4;
+local TabButton = "TabButton";
+TextButton_3.Name = TabButton;
+TextButton_3.Parent = ScrollingFrame;
+local Color3_Value_17 = Color3_FromRGB(55, 74, 251);
+TextButton_3.BackgroundColor3 = Color3_Value_17;
+TextButton_3.BorderSizePixel = 0;
+local UDim2_Value_25 = UDim2_New(0, 112, 0, 35);
+TextButton_3.Size = UDim2_Value_25;
+local Gotham_4 = Enum_Font.Gotham;
+TextButton_3.Font = Gotham_4;
+TextButton_3.Text = "透视";
+local Color3_Value_18 = Color3_FromRGB(255, 255, 255);
+TextButton_3.TextColor3 = Color3_Value_18;
+TextButton_3.TextSize = 14;
+TextButton_3.ZIndex = 2;
+local _ = Size
+local AbsoluteContentSize_2 = UIListLayout_2.AbsoluteContentSize;
+local UDim2_Value_26 = UDim2_New(0, 0, 0, 1080);
+ScrollingFrame_2.CanvasSize = UDim2_Value_26;
+local Connection_10;
+Connection_10 = ScrollingFrame_2.ChildAdded:Connect(function()
+    local AbsoluteContentSize_12 = UIListLayout_2.AbsoluteContentSize;
+    local UDim2_Value_82 = UDim2_New(0, 0, 0, 1080);
+    ScrollingFrame_2.CanvasSize = UDim2_Value_82;
+
+end);
+local Connection_11;
+Connection_11 = ScrollingFrame_2.ChildRemoved:Connect(function()
+    local AbsoluteContentSize_12 = UIListLayout_2.AbsoluteContentSize;
+    local UDim2_Value_82 = UDim2_New(0, 0, 0, 1080);
+    ScrollingFrame_2.CanvasSize = UDim2_Value_82;
+
+end);
+local Color3_Value_19 = Color3_FromRGB(55, 74, 251);
+TextButton_3.BackgroundColor3 = Color3_Value_19;
+local Color3_Value_20 = Color3_FromRGB(255, 255, 255);
+TextButton_3.TextColor3 = Color3_Value_20;
+local Connection_12;
+Connection_12 = TextButton_3.MouseButton1Down:Connect(function() -- args: X_5, Y_5;
+    local AbsoluteContentSize_13 = UIListLayout_3.AbsoluteContentSize;
+    local UDim2_Value_83 = UDim2_New(0, 0, 0, 1080);
+    ScrollingFrame_3.CanvasSize = UDim2_Value_83;
+    local Children = ScrollingFrame:GetChildren();
+    for i, v in pairs(Children) do
+        local IsA = v.IsA;
+        local TextButton_11 = v:IsA("TextButton");
+        if not TextButton_11 then return end -- won't run
+        local Color3_Value_73 = Color3_FromRGB(40, 42, 60);
+        v.BackgroundColor3 = Color3_Value_73;
+        local Color3_Value_74 = Color3_FromRGB(190, 190, 190);
+        v.TextColor3 = Color3_Value_74;
+    end
+    local Children_2 = Folder:GetChildren();
+    for i_2, v_2 in pairs(Children_2) do
+        v_2.Visible = false;
+    end
+    ScrollingFrame_2.Visible = true;
+    local TweenService_4 = game:GetService("TweenService");
+    local New_5 = TweenInfo.new;
+    local Enum_EasingStyle = Enum.EasingStyle;
+    local Linear = Enum_EasingStyle.Linear;
+    local Enum_EasingDirection = Enum.EasingDirection;
+    local In = Enum_EasingDirection.In;
+    local _call227 = New_5(0.1, Linear, In);
+    local Color3_Value_75 = Color3_FromRGB(55, 74, 251);
+    local str_5 = TweenService:Create(TextButton_3, _call227, {
+        BackgroundColor3 = Color3_Value_75,
+    });
+    local Play_9 = str_5.Play;
+    local Play_10 = str_5:Play();
+    local TweenService_5 = game:GetService("TweenService");
+    local New_6 = TweenInfo.new;
+    local Linear_2 = Enum_EasingStyle.Linear;
+    local In_2 = Enum_EasingDirection.In;
+    local _call231 = New_6(0.1, Linear_2, In_2);
+    local Color3_Value_76 = Color3_FromRGB(255, 255, 255);
+    local str_6 = TweenService:Create(TextButton_3, _call231, {
+        TextColor3 = Color3_Value_76,
+    });
+    local Play_11 = str_6.Play;
+    local Play_12 = str_6:Play();
+
+end);
+local Frame_8 = Instance.new("Frame");
+local TextLabel_3 = Instance.new("TextLabel");
+local UIPadding = Instance.new("UIPadding");
+local UICorner_5 = Instance.new("UICorner");
+local UICorner_6 = Instance.new("UICorner");
+local ImageLabel = Instance.new("ImageLabel");
+local TextButton_4 = Instance.new("TextButton");
+local Frame_9 = Instance.new("Frame");
+Frame_8.Name = "透视物品(esp)_Toggle";
+Frame_8.Parent = ScrollingFrame_2;
+local AbsoluteContentSize_3 = UIListLayout_2.AbsoluteContentSize;
+local UDim2_Value_27 = UDim2_New(0, 0, 0, 1080);
+ScrollingFrame_2.CanvasSize = UDim2_Value_27;
+local Color3_Value_21 = Color3_FromRGB(40, 42, 60);
+Frame_8.BackgroundColor3 = Color3_Value_21;
+Frame_8.BorderSizePixel = 0;
+local UDim2_Value_28 = UDim2_New(0, 326, 0, 28);
+Frame_8.Size = UDim2_Value_28;
+local ToggleName = "ToggleName";
+TextLabel_3.Name = ToggleName;
+TextLabel_3.Parent = Frame_8;
+local Color3_Value_22 = Color3_FromRGB(40, 42, 60);
+TextLabel_3.BackgroundColor3 = Color3_Value_22;
+TextLabel_3.BackgroundTransparency = 1;
+TextLabel_3.BorderSizePixel = 0;
+local UDim2_Value_29 = UDim2_New(0, 278, 0, 28);
+TextLabel_3.Size = UDim2_Value_29;
+local Gotham_5 = Enum_Font.Gotham;
+TextLabel_3.Font = Gotham_5;
+TextLabel_3.Text = "透视物品(esp)";
+local Color3_Value_23 = Color3_FromRGB(255, 255, 255);
+TextLabel_3.TextColor3 = Color3_Value_23;
+TextLabel_3.TextSize = 13;
+local Enum_TextXAlignment = Enum.TextXAlignment;
+local Left = Enum_TextXAlignment.Left;
+TextLabel_3.TextXAlignment = Left;
+UIPadding.Name = "ToggleNamePadding";
+UIPadding.Parent = TextLabel_3;
+local UDim_Value_5 = UDim_New(0, 10);
+UIPadding.PaddingLeft = UDim_Value_5;
+UICorner_5.Name = "ToggleFrameCorner";
+UICorner_5.Parent = Frame_8;
+Frame_9.Name = "ToggleF";
+Frame_9.Parent = Frame_8;
+local Color3_Value_24 = Color3_FromRGB(55, 55, 75);
+Frame_9.BackgroundColor3 = Color3_Value_24;
+Frame_9.BackgroundTransparency = 0;
+Frame_9.BorderSizePixel = 0;
+local UDim2_Value_30 = UDim2_New(0.867647052, 0, 0.142857149, 0);
+Frame_9.Position = UDim2_Value_30;
+local UDim2_Value_31 = UDim2_New(0, 38, 0, 18);
+Frame_9.Size = UDim2_Value_31;
+local UDim_Value_6 = UDim_New(0, 25);
+UICorner_6.CornerRadius = UDim_Value_6;
+UICorner_6.Name = "ToggleCorner";
+UICorner_6.Parent = Frame_9;
+TextButton_4.Name = "ToggleButton";
+TextButton_4.Parent = Frame_9;
+local Color3_Value_25 = Color3_FromRGB(55, 55, 75);
+TextButton_4.BackgroundColor3 = Color3_Value_25;
+TextButton_4.BackgroundTransparency = 1;
+TextButton_4.BorderSizePixel = 0;
+local UDim2_Value_32 = UDim2_New(0, 45, 0, 23);
+TextButton_4.Size = UDim2_Value_32;
+local SourceSans = Enum_Font.SourceSans;
+TextButton_4.Font = SourceSans;
+TextButton_4.Text = "";
+local Color3_Value_26 = Color3_FromRGB(0, 0, 0);
+TextButton_4.TextColor3 = Color3_Value_26;
+TextButton_4.TextSize = 14;
+ImageLabel.Name = "ToggleCircle";
+ImageLabel.Parent = Frame_9;
+local Color3_Value_27 = Color3_FromRGB(255, 255, 255);
+ImageLabel.BackgroundColor3 = Color3_Value_27;
+ImageLabel.BackgroundTransparency = 1;
+local UDim2_Value_33 = UDim2_New(0.093, 0, 0.153, 0);
+ImageLabel.Position = UDim2_Value_33;
+local UDim2_Value_34 = UDim2_New(0, 14, 0, 14);
+ImageLabel.Size = UDim2_Value_34;
+ImageLabel.Image = "rbxassetid://3570695787";
+local Enum_ScaleType = Enum.ScaleType;
+local Slice = Enum_ScaleType.Slice;
+ImageLabel.ScaleType = Slice;
+local Rect_New = Rect.new;
+local Rect_Value = Rect_New(100, 100, 100, 100);
+ImageLabel.SliceCenter = Rect_Value;
+ImageLabel.SliceScale = 0.12;
+local Connection_13;
+Connection_13 = TextButton_4.MouseButton1Down:Connect(function() -- args: X_6, Y_6;
+    local TweenService_6 = game:GetService("TweenService");
+    local New_7 = TweenInfo.new;
+    local _call233 = New_7(0.3);
+    local Color3_Value_77 = Color3_FromRGB(55, 74, 251);
+    local str_7 = TweenService:Create(Frame_9, _call233, {
+        BackgroundColor3 = Color3_Value_77,
+    });
+    local Play_13 = str_7.Play;
+    local Play_14 = str_7:Play();
+    local TweenService_7 = game:GetService("TweenService");
+    local New_8 = TweenInfo.new;
+    local _call235 = New_8(0.3);
+    local UDim2_Value_84 = UDim2_New(0.559, 0, 0.153, 0);
+    local str_8 = TweenService:Create(ImageLabel, _call235, {
+        Position = UDim2_Value_84,
+    });
+    local Play_15 = str_8.Play;
+    local Play_16 = str_8:Play();
+    local Success_62, Error_Message_62 = pcall(function(...)
+        local Spawn = "spawn";
+        local Spawned = task.spawn(function(p1_0, p2_0, p3_0, p4_0)
+            local Children_5 = workspace:GetChildren();
+            for i_5, v_5 in ipairs(Children_5) do
+                local var277 = (i_5 and 15407863);
+                local var278 = (v_5 and 12782369);
+                local Name = "Name";
+                local Name_2 = v_5[Name];
+                local Name_2_is_string = (Name_2 == "LightBulb");
+                local Name_3 = "Name";
+                local Name_4 = v_5[Name_3];
+                local Name_4_is_string = (Name_4 == "GasCanister");
+                local Name_5 = "Name";
+                local Name_6 = v_5[Name_5];
+                local Name_6_is_string = (Name_6 == "CakeMix");
+                local var292 = (Name_6_is_string and 16544779);
+            end
+            local Ignore = "ignore";
+            local Ignore_2 = workspace[Ignore];
+            local Children_6 = Ignore_2:GetChildren();
+            for i_6, v_6 in ipairs(Children_6) do
+                local var294 = (i_6 and 11684778);
+                if not v_6 then return end -- won't run
+                local Name_7 = "Name";
+                local Name_8 = v_6[Name_7];
+                local Name_8_is_string = (Name_8 == "Looky");
+                local var300 = (Name_8_is_string and 14150942);
+            end
+            local var301 = wait(0.1);
+            local Children_7 = workspace:GetChildren();
+            for i_7, v_7 in ipairs(Children_7) do
+                local var301 = (i_7 and 15407863);
+                local var302 = (v_7 and 12782369);
+                local Name_9 = v_7[Name_7];
+                local Name_9_is_string = (Name_9 == "LightBulb");
+                local Name_10 = v_7[Name_7];
+                local Name_10_is_string = (Name_10 == "GasCanister");
+                local Name_11 = v_7[Name_7];
+                local Name_11_is_string = (Name_11 == "CakeMix");
+                local var303 = (Name_11_is_string and 16544779);
+            end
+            local Ignore_3 = workspace[Ignore];
+            local Children_8 = Ignore_3:GetChildren();
+            for i_8, v_8 in ipairs(Children_8) do
+                local var303 = (i_8 and 11684778);
+                if not v_8 then return end -- won't run
+                local Name_12 = v_8[Name_7];
+                local Name_12_is_string = (Name_12 == "Looky");
+                local var305 = (Name_12_is_string and 14150942);
+            end
+            local var306 = wait(0.1);
+            local Children_9 = workspace:GetChildren();
+            for i_9, v_9 in ipairs(Children_9) do
+                local var306 = (i_9 and 15407863);
+                local var307 = (v_9 and 12782369);
+                local Name_13 = v_9[Name_7];
+                local Name_13_is_string = (Name_13 == "LightBulb");
+                local Name_14 = v_9[Name_7];
+                local Name_14_is_string = (Name_14 == "GasCanister");
+                local Name_15 = v_9[Name_7];
+                local Name_15_is_string = (Name_15 == "CakeMix");
+                local var308 = (Name_15_is_string and 16544779);
+            end
+            local Ignore_4 = workspace[Ignore];
+            local Children_10 = Ignore_4:GetChildren();
+            for i_10, v_10 in ipairs(Children_10) do
+                local var308 = (i_10 and 11684778);
+                if not v_10 then return end -- won't run
+                local Name_16 = v_10[Name_7];
+                local Name_16_is_string = (Name_16 == "Looky");
+                local var310 = (Name_16_is_string and 14150942);
+            end
+            local var311 = wait(0.1);
+            local Children_11 = workspace:GetChildren();
+            for i_11, v_11 in ipairs(Children_11) do
+                local var311 = (i_11 and 15407863);
+                local var312 = (v_11 and 12782369);
+                local Name_17 = v_11[Name_7];
+                local Name_17_is_string = (Name_17 == "LightBulb");
+                local Name_18 = v_11[Name_7];
+                local Name_18_is_string = (Name_18 == "GasCanister");
+                local Name_19 = v_11[Name_7];
+                local Name_19_is_string = (Name_19 == "CakeMix");
+                local var313 = (Name_19_is_string and 16544779);
+            end
+            local Ignore_5 = workspace[Ignore];
+            local Children_12 = Ignore_5:GetChildren();
+            for i_12, v_12 in ipairs(Children_12) do
+                local var313 = (i_12 and 11684778);
+                if not v_12 then return end -- won't run
+                local Name_20 = v_12[Name_7];
+                local Name_20_is_string = (Name_20 == "Looky");
+                local var315 = (Name_20_is_string and 14150942);
+            end
+            local var316 = wait(0.1);
+            local Children_13 = workspace:GetChildren();
+            for i_13, v_13 in ipairs(Children_13) do
+                local var316 = (i_13 and 15407863);
+                local var317 = (v_13 and 12782369);
+                local Name_21 = v_13[Name_7];
+                local Name_21_is_string = (Name_21 == "LightBulb");
+                local Name_22 = v_13[Name_7];
+                local Name_22_is_string = (Name_22 == "GasCanister");
+                local Name_23 = v_13[Name_7];
+                local Name_23_is_string = (Name_23 == "CakeMix");
+                local var318 = (Name_23_is_string and 16544779);
+            end
+            local Ignore_6 = workspace[Ignore];
+            local Children_14 = Ignore_6:GetChildren();
+            for i_14, v_14 in ipairs(Children_14) do
+                local var318 = (i_14 and 11684778);
+                if not v_14 then return end -- won't run
+                local Name_24 = v_14[Name_7];
+                local Name_24_is_string = (Name_24 == "Looky");
+                local var320 = (Name_24_is_string and 14150942);
+            end
+            local var321 = wait(0.1);
+            local Children_15 = workspace:GetChildren();
+            for i_15, v_15 in ipairs(Children_15) do
+                local var321 = (i_15 and 15407863);
+                local var322 = (v_15 and 12782369);
+                local Name_25 = v_15[Name_7];
+                local Name_25_is_string = (Name_25 == "LightBulb");
+                local Name_26 = v_15[Name_7];
+                local Name_26_is_string = (Name_26 == "GasCanister");
+                local Name_27 = v_15[Name_7];
+                local Name_27_is_string = (Name_27 == "CakeMix");
+                local var323 = (Name_27_is_string and 16544779);
+            end
+            local Ignore_7 = workspace[Ignore];
+            local Children_16 = Ignore_7:GetChildren();
+            for i_16, v_16 in ipairs(Children_16) do
+                local var323 = (i_16 and 11684778);
+                if not v_16 then return end -- won't run
+                local Name_28 = v_16[Name_7];
+                local Name_28_is_string = (Name_28 == "Looky");
+                local var325 = (Name_28_is_string and 14150942);
+            end
+            local var326 = wait(0.1);
+            local Children_17 = workspace:GetChildren();
+            for i_17, v_17 in ipairs(Children_17) do
+                local var326 = (i_17 and 15407863);
+                local var327 = (v_17 and 12782369);
+                local Name_29 = v_17[Name_7];
+                local Name_29_is_string = (Name_29 == "LightBulb");
+                local Name_30 = v_17[Name_7];
+                local Name_30_is_string = (Name_30 == "GasCanister");
+                local Name_31 = v_17[Name_7];
+                local Name_31_is_string = (Name_31 == "CakeMix");
+                local var328 = (Name_31_is_string and 16544779);
+            end
+            local Ignore_8 = workspace[Ignore];
+            local Children_18 = Ignore_8:GetChildren();
+            for i_18, v_18 in ipairs(Children_18) do
+                local var328 = (i_18 and 11684778);
+                if not v_18 then return end -- won't run
+                local Name_32 = v_18[Name_7];
+                local Name_32_is_string = (Name_32 == "Looky");
+                local var330 = (Name_32_is_string and 14150942);
+            end
+            local var331 = wait(0.1);
+            local Children_19 = workspace:GetChildren();
+            for i_19, v_19 in ipairs(Children_19) do
+                local var331 = (i_19 and 15407863);
+                local var332 = (v_19 and 12782369);
+                local Name_33 = v_19[Name_7];
+                local Name_33_is_string = (Name_33 == "LightBulb");
+                local Name_34 = v_19[Name_7];
+                local Name_34_is_string = (Name_34 == "GasCanister");
+                local Name_35 = v_19[Name_7];
+                local Name_35_is_string = (Name_35 == "CakeMix");
+                local var333 = (Name_35_is_string and 16544779);
+            end
+            local Ignore_9 = workspace[Ignore];
+            local Children_20 = Ignore_9:GetChildren();
+            for i_20, v_20 in ipairs(Children_20) do
+                local var333 = (i_20 and 11684778);
+                if not v_20 then return end -- won't run
+                local Name_36 = v_20[Name_7];
+                local Name_36_is_string = (Name_36 == "Looky");
+                local var335 = (Name_36_is_string and 14150942);
+            end
+            local var336 = wait(0.1);
+            local Children_21 = workspace:GetChildren();
+            for i_21, v_21 in ipairs(Children_21) do
+                local var336 = (i_21 and 15407863);
+                local var337 = (v_21 and 12782369);
+                local Name_37 = v_21[Name_7];
+                local Name_37_is_string = (Name_37 == "LightBulb");
+                local Name_38 = v_21[Name_7];
+                local Name_38_is_string = (Name_38 == "GasCanister");
+                local Name_39 = v_21[Name_7];
+                local Name_39_is_string = (Name_39 == "CakeMix");
+                local var338 = (Name_39_is_string and 16544779);
+            end
+            local Ignore_10 = workspace[Ignore];
+            local Children_22 = Ignore_10:GetChildren();
+            for i_22, v_22 in ipairs(Children_22) do
+                local var338 = (i_22 and 11684778);
+                if not v_22 then return end -- won't run
+                local Name_40 = v_22[Name_7];
+                local Name_40_is_string = (Name_40 == "Looky");
+                local var340 = (Name_40_is_string and 14150942);
+            end
+            local var341 = wait(0.1);
+            local Children_23 = workspace:GetChildren();
+            for i_23, v_23 in ipairs(Children_23) do
+                local var341 = (i_23 and 15407863);
+                local var342 = (v_23 and 12782369);
+                local Name_41 = v_23[Name_7];
+                local Name_41_is_string = (Name_41 == "LightBulb");
+                local Name_42 = v_23[Name_7];
+                local Name_42_is_string = (Name_42 == "GasCanister");
+                local Name_43 = v_23[Name_7];
+                local Name_43_is_string = (Name_43 == "CakeMix");
+                local var343 = (Name_43_is_string and 16544779);
+            end
+            local Ignore_11 = workspace[Ignore];
+            local Children_24 = Ignore_11:GetChildren();
+            for i_24, v_24 in ipairs(Children_24) do
+                local var343 = (i_24 and 11684778);
+                if not v_24 then return end -- won't run
+                local Name_44 = v_24[Name_7];
+                local Name_44_is_string = (Name_44 == "Looky");
+                local var345 = (Name_44_is_string and 14150942);
+            end
+            local var346 = wait(0.1);
+            local Children_25 = workspace:GetChildren();
+            for i_25, v_25 in ipairs(Children_25) do
+                local var346 = (i_25 and 15407863);
+                local var347 = (v_25 and 12782369);
+                local Name_45 = v_25[Name_7];
+                local Name_45_is_string = (Name_45 == "LightBulb");
+                local Name_46 = v_25[Name_7];
+                local Name_46_is_string = (Name_46 == "GasCanister");
+                local Name_47 = v_25[Name_7];
+                local Name_47_is_string = (Name_47 == "CakeMix");
+                local var348 = (Name_47_is_string and 16544779);
+            end
+            local Ignore_12 = workspace[Ignore];
+            local Children_26 = Ignore_12:GetChildren();
+            for i_26, v_26 in ipairs(Children_26) do
+                local var348 = (i_26 and 11684778);
+                if not v_26 then return end -- won't run
+                local Name_48 = v_26[Name_7];
+                local Name_48_is_string = (Name_48 == "Looky");
+                local var350 = (Name_48_is_string and 14150942);
+            end
+            local var351 = wait(0.1);
+            local Children_27 = workspace:GetChildren();
+            for i_27, v_27 in ipairs(Children_27) do
+                local var351 = (i_27 and 15407863);
+                local var352 = (v_27 and 12782369);
+                local Name_49 = v_27[Name_7];
+                local Name_49_is_string = (Name_49 == "LightBulb");
+                local Name_50 = v_27[Name_7];
+                local Name_50_is_string = (Name_50 == "GasCanister");
+                local Name_51 = v_27[Name_7];
+                local Name_51_is_string = (Name_51 == "CakeMix");
+                local var353 = (Name_51_is_string and 16544779);
+            end
+            local Ignore_13 = workspace[Ignore];
+            local Children_28 = Ignore_13:GetChildren();
+            for i_28, v_28 in ipairs(Children_28) do
+                local var353 = (i_28 and 11684778);
+                if not v_28 then return end -- won't run
+                local Name_52 = v_28[Name_7];
+                local Name_52_is_string = (Name_52 == "Looky");
+                local var355 = (Name_52_is_string and 14150942);
+            end
+            local var356 = wait(0.1);
+            local Children_29 = workspace:GetChildren();
+            for i_29, v_29 in ipairs(Children_29) do
+                local var356 = (i_29 and 15407863);
+                local var357 = (v_29 and 12782369);
+                local Name_53 = v_29[Name_7];
+                local Name_53_is_string = (Name_53 == "LightBulb");
+                local Name_54 = v_29[Name_7];
+                local Name_54_is_string = (Name_54 == "GasCanister");
+                local Name_55 = v_29[Name_7];
+                local Name_55_is_string = (Name_55 == "CakeMix");
+                local var358 = (Name_55_is_string and 16544779);
+            end
+            local Ignore_14 = workspace[Ignore];
+            local Children_30 = Ignore_14:GetChildren();
+            for i_30, v_30 in ipairs(Children_30) do
+                local var358 = (i_30 and 11684778);
+                if not v_30 then return end -- won't run
+                local Name_56 = v_30[Name_7];
+                local Name_56_is_string = (Name_56 == "Looky");
+                local var360 = (Name_56_is_string and 14150942);
+            end
+            local var361 = wait(0.1);
+            local Children_31 = workspace:GetChildren();
+            for i_31, v_31 in ipairs(Children_31) do
+                local var361 = (i_31 and 15407863);
+                local var362 = (v_31 and 12782369);
+                local Name_57 = v_31[Name_7];
+                local Name_57_is_string = (Name_57 == "LightBulb");
+                local Name_58 = v_31[Name_7];
+                local Name_58_is_string = (Name_58 == "GasCanister");
+                local Name_59 = v_31[Name_7];
+                local Name_59_is_string = (Name_59 == "CakeMix");
+                local var363 = (Name_59_is_string and 16544779);
+            end
+            local Ignore_15 = workspace[Ignore];
+            local Children_32 = Ignore_15:GetChildren();
+            for i_32, v_32 in ipairs(Children_32) do
+                local var363 = (i_32 and 11684778);
+                if not v_32 then return end -- won't run
+                local Name_60 = v_32[Name_7];
+                local Name_60_is_string = (Name_60 == "Looky");
+                local var365 = (Name_60_is_string and 14150942);
+            end
+            local var366 = wait(0.1);
+            local Children_33 = workspace:GetChildren();
+            for i_33, v_33 in ipairs(Children_33) do
+                local var366 = (i_33 and 15407863);
+                local var367 = (v_33 and 12782369);
+                local Name_61 = v_33[Name_7];
+                local Name_61_is_string = (Name_61 == "LightBulb");
+                local Name_62 = v_33[Name_7];
+                local Name_62_is_string = (Name_62 == "GasCanister");
+                local Name_63 = v_33[Name_7];
+                local Name_63_is_string = (Name_63 == "CakeMix");
+                local var368 = (Name_63_is_string and 16544779);
+            end
+            local Ignore_16 = workspace[Ignore];
+            local Children_34 = Ignore_16:GetChildren();
+            for i_34, v_34 in ipairs(Children_34) do
+                local var368 = (i_34 and 11684778);
+                if not v_34 then return end -- won't run
+                local Name_64 = v_34[Name_7];
+                local Name_64_is_string = (Name_64 == "Looky");
+                local var370 = (Name_64_is_string and 14150942);
+            end
+            local var371 = wait(0.1);
+            local Children_35 = workspace:GetChildren();
+            for i_35, v_35 in ipairs(Children_35) do
+                local var371 = (i_35 and 15407863);
+                local var372 = (v_35 and 12782369);
+                local Name_65 = v_35[Name_7];
+                local Name_65_is_string = (Name_65 == "LightBulb");
+                local Name_66 = v_35[Name_7];
+                local Name_66_is_string = (Name_66 == "GasCanister");
+                local Name_67 = v_35[Name_7];
+                local Name_67_is_string = (Name_67 == "CakeMix");
+                local var373 = (Name_67_is_string and 16544779);
+            end
+            local Ignore_17 = workspace[Ignore];
+            local Children_36 = Ignore_17:GetChildren();
+            for i_36, v_36 in ipairs(Children_36) do
+                local var373 = (i_36 and 11684778);
+                if not v_36 then return end -- won't run
+                local Name_68 = v_36[Name_7];
+                local Name_68_is_string = (Name_68 == "Looky");
+                local var375 = (Name_68_is_string and 14150942);
+            end
+            local var376 = wait(0.1);
+            local Children_37 = workspace:GetChildren();
+            for i_37, v_37 in ipairs(Children_37) do
+                local var376 = (i_37 and 15407863);
+                local var377 = (v_37 and 12782369);
+                local Name_69 = v_37[Name_7];
+                local Name_69_is_string = (Name_69 == "LightBulb");
+                local Name_70 = v_37[Name_7];
+                local Name_70_is_string = (Name_70 == "GasCanister");
+                local Name_71 = v_37[Name_7];
+                local Name_71_is_string = (Name_71 == "CakeMix");
+                local var378 = (Name_71_is_string and 16544779);
+            end
+            local Ignore_18 = workspace[Ignore];
+            local Children_38 = Ignore_18:GetChildren();
+            for i_38, v_38 in ipairs(Children_38) do
+                local var378 = (i_38 and 11684778);
+                if not v_38 then return end -- won't run
+                local Name_72 = v_38[Name_7];
+                local Name_72_is_string = (Name_72 == "Looky");
+                local var380 = (Name_72_is_string and 14150942);
+            end
+            local var381 = wait(0.1);
+            local Children_39 = workspace:GetChildren();
+            for i_39, v_39 in ipairs(Children_39) do
+                local var381 = (i_39 and 15407863);
+                local var382 = (v_39 and 12782369);
+                local Name_73 = v_39[Name_7];
+                local Name_73_is_string = (Name_73 == "LightBulb");
+                local Name_74 = v_39[Name_7];
+                local Name_74_is_string = (Name_74 == "GasCanister");
+                local Name_75 = v_39[Name_7];
+                local Name_75_is_string = (Name_75 == "CakeMix");
+                local var383 = (Name_75_is_string and 16544779);
+            end
+            local Ignore_19 = workspace[Ignore];
+            local Children_40 = Ignore_19:GetChildren();
+            for i_40, v_40 in ipairs(Children_40) do
+                local var383 = (i_40 and 11684778);
+                if not v_40 then return end -- won't run
+                local Name_76 = v_40[Name_7];
+                local Name_76_is_string = (Name_76 == "Looky");
+                local var385 = (Name_76_is_string and 14150942);
+            end
+            local var386 = wait(0.1);
+            local Children_41 = workspace:GetChildren();
+            for i_41, v_41 in ipairs(Children_41) do
+                local var386 = (i_41 and 15407863);
+                local var387 = (v_41 and 12782369);
+                local Name_77 = v_41[Name_7];
+                local Name_77_is_string = (Name_77 == "LightBulb");
+                local Name_78 = v_41[Name_7];
+                local Name_78_is_string = (Name_78 == "GasCanister");
+                local Name_79 = v_41[Name_7];
+                local Name_79_is_string = (Name_79 == "CakeMix");
+                local var388 = (Name_79_is_string and 16544779);
+            end
+            local Ignore_20 = workspace[Ignore];
+            local Children_42 = Ignore_20:GetChildren();
+            for i_42, v_42 in ipairs(Children_42) do
+                local var388 = (i_42 and 11684778);
+                if not v_42 then return end -- won't run
+                local Name_80 = v_42[Name_7];
+                local Name_80_is_string = (Name_80 == "Looky");
+                local var390 = (Name_80_is_string and 14150942);
+            end
+            local var391 = wait(0.1);
+            local Children_43 = workspace:GetChildren();
+            for i_43, v_43 in ipairs(Children_43) do
+                local var391 = (i_43 and 15407863);
+            error("C:\\Users\\Administrator\\Downloads\\yetanotherbot\\unveilr\\main:659: too many operations")
+            end
+
+        end);
+    end)
+
+end);
+local Frame_10 = Instance.new("Frame");
+local TextLabel_4 = Instance.new("TextLabel");
+local UIPadding_2 = Instance.new("UIPadding");
+local UICorner_7 = Instance.new("UICorner");
+local UICorner_8 = Instance.new("UICorner");
+local ImageLabel_2 = Instance.new("ImageLabel");
+local TextButton_5 = Instance.new("TextButton");
+local Frame_11 = Instance.new("Frame");
+Frame_10.Name = "透视怪物(esp)_Toggle";
+Frame_10.Parent = ScrollingFrame_2;
+local AbsoluteContentSize_4 = UIListLayout_2.AbsoluteContentSize;
+local UDim2_Value_35 = UDim2_New(0, 0, 0, 1080);
+ScrollingFrame_2.CanvasSize = UDim2_Value_35;
+local Color3_Value_28 = Color3_FromRGB(40, 42, 60);
+Frame_10.BackgroundColor3 = Color3_Value_28;
+Frame_10.BorderSizePixel = 0;
+local UDim2_Value_36 = UDim2_New(0, 326, 0, 28);
+Frame_10.Size = UDim2_Value_36;
+TextLabel_4.Name = ToggleName;
+TextLabel_4.Parent = Frame_10;
+local Color3_Value_29 = Color3_FromRGB(40, 42, 60);
+TextLabel_4.BackgroundColor3 = Color3_Value_29;
+TextLabel_4.BackgroundTransparency = 1;
+TextLabel_4.BorderSizePixel = 0;
+local UDim2_Value_37 = UDim2_New(0, 278, 0, 28);
+TextLabel_4.Size = UDim2_Value_37;
+local Gotham_6 = Enum_Font.Gotham;
+TextLabel_4.Font = Gotham_6;
+TextLabel_4.Text = "透视怪物(esp)";
+local Color3_Value_30 = Color3_FromRGB(255, 255, 255);
+TextLabel_4.TextColor3 = Color3_Value_30;
+TextLabel_4.TextSize = 13;
+local Left_2 = Enum_TextXAlignment.Left;
+TextLabel_4.TextXAlignment = Left_2;
+UIPadding_2.Name = "ToggleNamePadding";
+UIPadding_2.Parent = TextLabel_4;
+local UDim_Value_7 = UDim_New(0, 10);
+UIPadding_2.PaddingLeft = UDim_Value_7;
+UICorner_7.Name = "ToggleFrameCorner";
+UICorner_7.Parent = Frame_10;
+Frame_11.Name = "ToggleF";
+Frame_11.Parent = Frame_10;
+local Color3_Value_31 = Color3_FromRGB(55, 55, 75);
+Frame_11.BackgroundColor3 = Color3_Value_31;
+Frame_11.BackgroundTransparency = 0;
+Frame_11.BorderSizePixel = 0;
+local UDim2_Value_38 = UDim2_New(0.867647052, 0, 0.142857149, 0);
+Frame_11.Position = UDim2_Value_38;
+local UDim2_Value_39 = UDim2_New(0, 38, 0, 18);
+Frame_11.Size = UDim2_Value_39;
+local UDim_Value_8 = UDim_New(0, 25);
+UICorner_8.CornerRadius = UDim_Value_8;
+UICorner_8.Name = "ToggleCorner";
+UICorner_8.Parent = Frame_11;
+TextButton_5.Name = "ToggleButton";
+TextButton_5.Parent = Frame_11;
+local Color3_Value_32 = Color3_FromRGB(55, 55, 75);
+TextButton_5.BackgroundColor3 = Color3_Value_32;
+TextButton_5.BackgroundTransparency = 1;
+TextButton_5.BorderSizePixel = 0;
+local UDim2_Value_40 = UDim2_New(0, 45, 0, 23);
+TextButton_5.Size = UDim2_Value_40;
+local SourceSans_2 = Enum_Font.SourceSans;
+TextButton_5.Font = SourceSans_2;
+TextButton_5.Text = "";
+local Color3_Value_33 = Color3_FromRGB(0, 0, 0);
+TextButton_5.TextColor3 = Color3_Value_33;
+TextButton_5.TextSize = 14;
+ImageLabel_2.Name = "ToggleCircle";
+ImageLabel_2.Parent = Frame_11;
+local Color3_Value_34 = Color3_FromRGB(255, 255, 255);
+ImageLabel_2.BackgroundColor3 = Color3_Value_34;
+ImageLabel_2.BackgroundTransparency = 1;
+local UDim2_Value_41 = UDim2_New(0.093, 0, 0.153, 0);
+ImageLabel_2.Position = UDim2_Value_41;
+local UDim2_Value_42 = UDim2_New(0, 14, 0, 14);
+ImageLabel_2.Size = UDim2_Value_42;
+ImageLabel_2.Image = "rbxassetid://3570695787";
+local Slice_2 = Enum_ScaleType.Slice;
+ImageLabel_2.ScaleType = Slice_2;
+local Rect_Value_2 = Rect_New(100, 100, 100, 100);
+ImageLabel_2.SliceCenter = Rect_Value_2;
+ImageLabel_2.SliceScale = 0.12;
+local Connection_14;
+Connection_14 = TextButton_5.MouseButton1Down:Connect(function() -- args: X_7, Y_7;
+    local TweenService_8 = game:GetService("TweenService");
+    local New_9 = TweenInfo.new;
+    local _call240 = New_9(0.3);
+    local Color3_Value_78 = Color3_FromRGB(55, 74, 251);
+    local str_9 = TweenService:Create(Frame_11, _call240, {
+        BackgroundColor3 = Color3_Value_78,
+    });
+    local Play_17 = str_9.Play;
+    local Play_18 = str_9:Play();
+    local TweenService_9 = game:GetService("TweenService");
+    local New_10 = TweenInfo.new;
+    local _call242 = New_10(0.3);
+    local UDim2_Value_85 = UDim2_New(0.559, 0, 0.153, 0);
+    local str_10 = TweenService:Create(ImageLabel_2, _call242, {
+        Position = UDim2_Value_85,
+    });
+    local Play_19 = str_10.Play;
+    local Play_20 = str_10:Play();
+    local Success_63, Error_Message_63 = pcall(function(...)
+        local Spawn_2 = "spawn";
+        local Spawned_2 = task.spawn(function(p1_0, p2_0, p3_0, p4_0)
+            local Monsters = workspace.Monsters;
+            local GetChildren = Monsters.GetChildren;
+            local Children_44 = Monsters:GetChildren();
+            for i_44, v_44 in ipairs(Children_44) do
+                if not not i_44 then return end -- won't run
+                if not not v_44 then return end -- won't run
+                local FindFirstChildOfClass = v_44.FindFirstChildOfClass;
+                local Highlight = v_44:FindFirstChildOfClass("Highlight");
+                local Not_Highlight = not Highlight;
+                local var394 = (Not_Highlight and 16422000);
+            end
+            local var395 = wait(0.1);
+            local Monsters_2 = workspace.Monsters;
+            local GetChildren_2 = Monsters_2.GetChildren;
+            local Children_45 = Monsters_2:GetChildren();
+            for i_45, v_45 in ipairs(Children_45) do
+                if not not i_45 then return end -- won't run
+                if not not v_45 then return end -- won't run
+                local FindFirstChildOfClass_2 = v_45.FindFirstChildOfClass;
+                local Highlight_2 = v_45:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_2 = not Highlight_2;
+                local var396 = (Not_Highlight_2 and 16422000);
+            end
+            local var397 = wait(0.1);
+            local Monsters_3 = workspace.Monsters;
+            local GetChildren_3 = Monsters_3.GetChildren;
+            local Children_46 = Monsters_3:GetChildren();
+            for i_46, v_46 in ipairs(Children_46) do
+                if not not i_46 then return end -- won't run
+                if not not v_46 then return end -- won't run
+                local FindFirstChildOfClass_3 = v_46.FindFirstChildOfClass;
+                local Highlight_3 = v_46:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_3 = not Highlight_3;
+                local var398 = (Not_Highlight_3 and 16422000);
+            end
+            local var399 = wait(0.1);
+            local Monsters_4 = workspace.Monsters;
+            local GetChildren_4 = Monsters_4.GetChildren;
+            local Children_47 = Monsters_4:GetChildren();
+            for i_47, v_47 in ipairs(Children_47) do
+                if not not i_47 then return end -- won't run
+                if not not v_47 then return end -- won't run
+                local FindFirstChildOfClass_4 = v_47.FindFirstChildOfClass;
+                local Highlight_4 = v_47:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_4 = not Highlight_4;
+                local var400 = (Not_Highlight_4 and 16422000);
+            end
+            local var401 = wait(0.1);
+            local Monsters_5 = workspace.Monsters;
+            local GetChildren_5 = Monsters_5.GetChildren;
+            local Children_48 = Monsters_5:GetChildren();
+            for i_48, v_48 in ipairs(Children_48) do
+                if not not i_48 then return end -- won't run
+                if not not v_48 then return end -- won't run
+                local FindFirstChildOfClass_5 = v_48.FindFirstChildOfClass;
+                local Highlight_5 = v_48:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_5 = not Highlight_5;
+                local var402 = (Not_Highlight_5 and 16422000);
+            end
+            local var403 = wait(0.1);
+            local Monsters_6 = workspace.Monsters;
+            local GetChildren_6 = Monsters_6.GetChildren;
+            local Children_49 = Monsters_6:GetChildren();
+            for i_49, v_49 in ipairs(Children_49) do
+                if not not i_49 then return end -- won't run
+                if not not v_49 then return end -- won't run
+                local FindFirstChildOfClass_6 = v_49.FindFirstChildOfClass;
+                local Highlight_6 = v_49:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_6 = not Highlight_6;
+                local var404 = (Not_Highlight_6 and 16422000);
+            end
+            local var405 = wait(0.1);
+            local Monsters_7 = workspace.Monsters;
+            local GetChildren_7 = Monsters_7.GetChildren;
+            local Children_50 = Monsters_7:GetChildren();
+            for i_50, v_50 in ipairs(Children_50) do
+                if not not i_50 then return end -- won't run
+                if not not v_50 then return end -- won't run
+                local FindFirstChildOfClass_7 = v_50.FindFirstChildOfClass;
+                local Highlight_7 = v_50:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_7 = not Highlight_7;
+                local var406 = (Not_Highlight_7 and 16422000);
+            end
+            local var407 = wait(0.1);
+            local Monsters_8 = workspace.Monsters;
+            local GetChildren_8 = Monsters_8.GetChildren;
+            local Children_51 = Monsters_8:GetChildren();
+            for i_51, v_51 in ipairs(Children_51) do
+                if not not i_51 then return end -- won't run
+                if not not v_51 then return end -- won't run
+                local FindFirstChildOfClass_8 = v_51.FindFirstChildOfClass;
+                local Highlight_8 = v_51:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_8 = not Highlight_8;
+                local var408 = (Not_Highlight_8 and 16422000);
+            end
+            local var409 = wait(0.1);
+            local Monsters_9 = workspace.Monsters;
+            local GetChildren_9 = Monsters_9.GetChildren;
+            local Children_52 = Monsters_9:GetChildren();
+            for i_52, v_52 in ipairs(Children_52) do
+                if not not i_52 then return end -- won't run
+                if not not v_52 then return end -- won't run
+                local FindFirstChildOfClass_9 = v_52.FindFirstChildOfClass;
+                local Highlight_9 = v_52:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_9 = not Highlight_9;
+                local var410 = (Not_Highlight_9 and 16422000);
+            end
+            local var411 = wait(0.1);
+            local Monsters_10 = workspace.Monsters;
+            local GetChildren_10 = Monsters_10.GetChildren;
+            local Children_53 = Monsters_10:GetChildren();
+            for i_53, v_53 in ipairs(Children_53) do
+                if not not i_53 then return end -- won't run
+                if not not v_53 then return end -- won't run
+                local FindFirstChildOfClass_10 = v_53.FindFirstChildOfClass;
+                local Highlight_10 = v_53:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_10 = not Highlight_10;
+                local var412 = (Not_Highlight_10 and 16422000);
+            end
+            local var413 = wait(0.1);
+            local Monsters_11 = workspace.Monsters;
+            local GetChildren_11 = Monsters_11.GetChildren;
+            local Children_54 = Monsters_11:GetChildren();
+            for i_54, v_54 in ipairs(Children_54) do
+                if not not i_54 then return end -- won't run
+                if not not v_54 then return end -- won't run
+                local FindFirstChildOfClass_11 = v_54.FindFirstChildOfClass;
+                local Highlight_11 = v_54:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_11 = not Highlight_11;
+                local var414 = (Not_Highlight_11 and 16422000);
+            end
+            local var415 = wait(0.1);
+            local Monsters_12 = workspace.Monsters;
+            local GetChildren_12 = Monsters_12.GetChildren;
+            local Children_55 = Monsters_12:GetChildren();
+            for i_55, v_55 in ipairs(Children_55) do
+                if not not i_55 then return end -- won't run
+                if not not v_55 then return end -- won't run
+                local FindFirstChildOfClass_12 = v_55.FindFirstChildOfClass;
+                local Highlight_12 = v_55:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_12 = not Highlight_12;
+                local var416 = (Not_Highlight_12 and 16422000);
+            end
+            local var417 = wait(0.1);
+            local Monsters_13 = workspace.Monsters;
+            local GetChildren_13 = Monsters_13.GetChildren;
+            local Children_56 = Monsters_13:GetChildren();
+            for i_56, v_56 in ipairs(Children_56) do
+                if not not i_56 then return end -- won't run
+                if not not v_56 then return end -- won't run
+                local FindFirstChildOfClass_13 = v_56.FindFirstChildOfClass;
+                local Highlight_13 = v_56:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_13 = not Highlight_13;
+                local var418 = (Not_Highlight_13 and 16422000);
+            end
+            local var419 = wait(0.1);
+            local Monsters_14 = workspace.Monsters;
+            local GetChildren_14 = Monsters_14.GetChildren;
+            local Children_57 = Monsters_14:GetChildren();
+            for i_57, v_57 in ipairs(Children_57) do
+                if not not i_57 then return end -- won't run
+                if not not v_57 then return end -- won't run
+                local FindFirstChildOfClass_14 = v_57.FindFirstChildOfClass;
+                local Highlight_14 = v_57:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_14 = not Highlight_14;
+                local var420 = (Not_Highlight_14 and 16422000);
+            end
+            local var421 = wait(0.1);
+            local Monsters_15 = workspace.Monsters;
+            local GetChildren_15 = Monsters_15.GetChildren;
+            local Children_58 = Monsters_15:GetChildren();
+            for i_58, v_58 in ipairs(Children_58) do
+                if not not i_58 then return end -- won't run
+                if not not v_58 then return end -- won't run
+                local FindFirstChildOfClass_15 = v_58.FindFirstChildOfClass;
+                local Highlight_15 = v_58:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_15 = not Highlight_15;
+                local var422 = (Not_Highlight_15 and 16422000);
+            end
+            local var423 = wait(0.1);
+            local Monsters_16 = workspace.Monsters;
+            local GetChildren_16 = Monsters_16.GetChildren;
+            local Children_59 = Monsters_16:GetChildren();
+            for i_59, v_59 in ipairs(Children_59) do
+                if not not i_59 then return end -- won't run
+                if not not v_59 then return end -- won't run
+                local FindFirstChildOfClass_16 = v_59.FindFirstChildOfClass;
+                local Highlight_16 = v_59:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_16 = not Highlight_16;
+                local var424 = (Not_Highlight_16 and 16422000);
+            end
+            local var425 = wait(0.1);
+            local Monsters_17 = workspace.Monsters;
+            local GetChildren_17 = Monsters_17.GetChildren;
+            local Children_60 = Monsters_17:GetChildren();
+            for i_60, v_60 in ipairs(Children_60) do
+                if not not i_60 then return end -- won't run
+                if not not v_60 then return end -- won't run
+                local FindFirstChildOfClass_17 = v_60.FindFirstChildOfClass;
+                local Highlight_17 = v_60:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_17 = not Highlight_17;
+                local var426 = (Not_Highlight_17 and 16422000);
+            end
+            local var427 = wait(0.1);
+            local Monsters_18 = workspace.Monsters;
+            local GetChildren_18 = Monsters_18.GetChildren;
+            local Children_61 = Monsters_18:GetChildren();
+            for i_61, v_61 in ipairs(Children_61) do
+                if not not i_61 then return end -- won't run
+                if not not v_61 then return end -- won't run
+                local FindFirstChildOfClass_18 = v_61.FindFirstChildOfClass;
+                local Highlight_18 = v_61:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_18 = not Highlight_18;
+                local var428 = (Not_Highlight_18 and 16422000);
+            end
+            local var429 = wait(0.1);
+            local Monsters_19 = workspace.Monsters;
+            local GetChildren_19 = Monsters_19.GetChildren;
+            local Children_62 = Monsters_19:GetChildren();
+            for i_62, v_62 in ipairs(Children_62) do
+                if not not i_62 then return end -- won't run
+                if not not v_62 then return end -- won't run
+                local FindFirstChildOfClass_19 = v_62.FindFirstChildOfClass;
+                local Highlight_19 = v_62:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_19 = not Highlight_19;
+                local var430 = (Not_Highlight_19 and 16422000);
+            end
+            local var431 = wait(0.1);
+            local Monsters_20 = workspace.Monsters;
+            local GetChildren_20 = Monsters_20.GetChildren;
+            local Children_63 = Monsters_20:GetChildren();
+            for i_63, v_63 in ipairs(Children_63) do
+                if not not i_63 then return end -- won't run
+                if not not v_63 then return end -- won't run
+                local FindFirstChildOfClass_20 = v_63.FindFirstChildOfClass;
+                local Highlight_20 = v_63:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_20 = not Highlight_20;
+                local var432 = (Not_Highlight_20 and 16422000);
+            end
+            local var433 = wait(0.1);
+            local Monsters_21 = workspace.Monsters;
+            local GetChildren_21 = Monsters_21.GetChildren;
+            local Children_64 = Monsters_21:GetChildren();
+            for i_64, v_64 in ipairs(Children_64) do
+                if not not i_64 then return end -- won't run
+                if not not v_64 then return end -- won't run
+                local FindFirstChildOfClass_21 = v_64.FindFirstChildOfClass;
+                local Highlight_21 = v_64:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_21 = not Highlight_21;
+                local var434 = (Not_Highlight_21 and 16422000);
+            end
+            local var435 = wait(0.1);
+            local Monsters_22 = workspace.Monsters;
+            local GetChildren_22 = Monsters_22.GetChildren;
+            local Children_65 = Monsters_22:GetChildren();
+            for i_65, v_65 in ipairs(Children_65) do
+                if not not i_65 then return end -- won't run
+                if not not v_65 then return end -- won't run
+                local FindFirstChildOfClass_22 = v_65.FindFirstChildOfClass;
+                local Highlight_22 = v_65:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_22 = not Highlight_22;
+                local var436 = (Not_Highlight_22 and 16422000);
+            end
+            local var437 = wait(0.1);
+            local Monsters_23 = workspace.Monsters;
+            local GetChildren_23 = Monsters_23.GetChildren;
+            local Children_66 = Monsters_23:GetChildren();
+            for i_66, v_66 in ipairs(Children_66) do
+                if not not i_66 then return end -- won't run
+                if not not v_66 then return end -- won't run
+                local FindFirstChildOfClass_23 = v_66.FindFirstChildOfClass;
+                local Highlight_23 = v_66:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_23 = not Highlight_23;
+                local var438 = (Not_Highlight_23 and 16422000);
+            end
+            local var439 = wait(0.1);
+            local Monsters_24 = workspace.Monsters;
+            local GetChildren_24 = Monsters_24.GetChildren;
+            local Children_67 = Monsters_24:GetChildren();
+            for i_67, v_67 in ipairs(Children_67) do
+                if not not i_67 then return end -- won't run
+                if not not v_67 then return end -- won't run
+                local FindFirstChildOfClass_24 = v_67.FindFirstChildOfClass;
+                local Highlight_24 = v_67:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_24 = not Highlight_24;
+                local var440 = (Not_Highlight_24 and 16422000);
+            end
+            local var441 = wait(0.1);
+            local Monsters_25 = workspace.Monsters;
+            local GetChildren_25 = Monsters_25.GetChildren;
+            local Children_68 = Monsters_25:GetChildren();
+            for i_68, v_68 in ipairs(Children_68) do
+                if not not i_68 then return end -- won't run
+                if not not v_68 then return end -- won't run
+                local FindFirstChildOfClass_25 = v_68.FindFirstChildOfClass;
+                local Highlight_25 = v_68:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_25 = not Highlight_25;
+                local var442 = (Not_Highlight_25 and 16422000);
+            end
+            local var443 = wait(0.1);
+            local Monsters_26 = workspace.Monsters;
+            local GetChildren_26 = Monsters_26.GetChildren;
+            local Children_69 = Monsters_26:GetChildren();
+            for i_69, v_69 in ipairs(Children_69) do
+                if not not i_69 then return end -- won't run
+                if not not v_69 then return end -- won't run
+                local FindFirstChildOfClass_26 = v_69.FindFirstChildOfClass;
+                local Highlight_26 = v_69:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_26 = not Highlight_26;
+                local var444 = (Not_Highlight_26 and 16422000);
+            end
+            local var445 = wait(0.1);
+            local Monsters_27 = workspace.Monsters;
+            local GetChildren_27 = Monsters_27.GetChildren;
+            local Children_70 = Monsters_27:GetChildren();
+            for i_70, v_70 in ipairs(Children_70) do
+                if not not i_70 then return end -- won't run
+                if not not v_70 then return end -- won't run
+                local FindFirstChildOfClass_27 = v_70.FindFirstChildOfClass;
+                local Highlight_27 = v_70:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_27 = not Highlight_27;
+                local var446 = (Not_Highlight_27 and 16422000);
+            end
+            local var447 = wait(0.1);
+            local Monsters_28 = workspace.Monsters;
+            local GetChildren_28 = Monsters_28.GetChildren;
+            local Children_71 = Monsters_28:GetChildren();
+            for i_71, v_71 in ipairs(Children_71) do
+                if not not i_71 then return end -- won't run
+                if not not v_71 then return end -- won't run
+                local FindFirstChildOfClass_28 = v_71.FindFirstChildOfClass;
+                local Highlight_28 = v_71:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_28 = not Highlight_28;
+                local var448 = (Not_Highlight_28 and 16422000);
+            end
+            local var449 = wait(0.1);
+            local Monsters_29 = workspace.Monsters;
+            local GetChildren_29 = Monsters_29.GetChildren;
+            local Children_72 = Monsters_29:GetChildren();
+            for i_72, v_72 in ipairs(Children_72) do
+                if not not i_72 then return end -- won't run
+                if not not v_72 then return end -- won't run
+                local FindFirstChildOfClass_29 = v_72.FindFirstChildOfClass;
+                local Highlight_29 = v_72:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_29 = not Highlight_29;
+                local var450 = (Not_Highlight_29 and 16422000);
+            end
+            local var451 = wait(0.1);
+            local Monsters_30 = workspace.Monsters;
+            local GetChildren_30 = Monsters_30.GetChildren;
+            local Children_73 = Monsters_30:GetChildren();
+            for i_73, v_73 in ipairs(Children_73) do
+                if not not i_73 then return end -- won't run
+                if not not v_73 then return end -- won't run
+                local FindFirstChildOfClass_30 = v_73.FindFirstChildOfClass;
+                local Highlight_30 = v_73:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_30 = not Highlight_30;
+                local var452 = (Not_Highlight_30 and 16422000);
+            end
+            local var453 = wait(0.1);
+            local Monsters_31 = workspace.Monsters;
+            local GetChildren_31 = Monsters_31.GetChildren;
+            local Children_74 = Monsters_31:GetChildren();
+            for i_74, v_74 in ipairs(Children_74) do
+                if not not i_74 then return end -- won't run
+                if not not v_74 then return end -- won't run
+                local FindFirstChildOfClass_31 = v_74.FindFirstChildOfClass;
+                local Highlight_31 = v_74:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_31 = not Highlight_31;
+                local var454 = (Not_Highlight_31 and 16422000);
+            end
+            local var455 = wait(0.1);
+            local Monsters_32 = workspace.Monsters;
+            local GetChildren_32 = Monsters_32.GetChildren;
+            local Children_75 = Monsters_32:GetChildren();
+            for i_75, v_75 in ipairs(Children_75) do
+                if not not i_75 then return end -- won't run
+                if not not v_75 then return end -- won't run
+                local FindFirstChildOfClass_32 = v_75.FindFirstChildOfClass;
+                local Highlight_32 = v_75:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_32 = not Highlight_32;
+                local var456 = (Not_Highlight_32 and 16422000);
+            end
+            local var457 = wait(0.1);
+            local Monsters_33 = workspace.Monsters;
+            local GetChildren_33 = Monsters_33.GetChildren;
+            local Children_76 = Monsters_33:GetChildren();
+            for i_76, v_76 in ipairs(Children_76) do
+                if not not i_76 then return end -- won't run
+                if not not v_76 then return end -- won't run
+                local FindFirstChildOfClass_33 = v_76.FindFirstChildOfClass;
+                local Highlight_33 = v_76:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_33 = not Highlight_33;
+                local var458 = (Not_Highlight_33 and 16422000);
+            end
+            local var459 = wait(0.1);
+            local Monsters_34 = workspace.Monsters;
+            local GetChildren_34 = Monsters_34.GetChildren;
+            local Children_77 = Monsters_34:GetChildren();
+            for i_77, v_77 in ipairs(Children_77) do
+                if not not i_77 then return end -- won't run
+                if not not v_77 then return end -- won't run
+                local FindFirstChildOfClass_34 = v_77.FindFirstChildOfClass;
+                local Highlight_34 = v_77:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_34 = not Highlight_34;
+                local var460 = (Not_Highlight_34 and 16422000);
+            end
+            local var461 = wait(0.1);
+            local Monsters_35 = workspace.Monsters;
+            local GetChildren_35 = Monsters_35.GetChildren;
+            local Children_78 = Monsters_35:GetChildren();
+            for i_78, v_78 in ipairs(Children_78) do
+                if not not i_78 then return end -- won't run
+                if not not v_78 then return end -- won't run
+                local FindFirstChildOfClass_35 = v_78.FindFirstChildOfClass;
+                local Highlight_35 = v_78:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_35 = not Highlight_35;
+                local var462 = (Not_Highlight_35 and 16422000);
+            end
+            local var463 = wait(0.1);
+            local Monsters_36 = workspace.Monsters;
+            local GetChildren_36 = Monsters_36.GetChildren;
+            local Children_79 = Monsters_36:GetChildren();
+            for i_79, v_79 in ipairs(Children_79) do
+                if not not i_79 then return end -- won't run
+                if not not v_79 then return end -- won't run
+                local FindFirstChildOfClass_36 = v_79.FindFirstChildOfClass;
+                local Highlight_36 = v_79:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_36 = not Highlight_36;
+                local var464 = (Not_Highlight_36 and 16422000);
+            end
+            local var465 = wait(0.1);
+            local Monsters_37 = workspace.Monsters;
+            local GetChildren_37 = Monsters_37.GetChildren;
+            local Children_80 = Monsters_37:GetChildren();
+            for i_80, v_80 in ipairs(Children_80) do
+                if not not i_80 then return end -- won't run
+                if not not v_80 then return end -- won't run
+                local FindFirstChildOfClass_37 = v_80.FindFirstChildOfClass;
+                local Highlight_37 = v_80:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_37 = not Highlight_37;
+                local var466 = (Not_Highlight_37 and 16422000);
+            end
+            local var467 = wait(0.1);
+            local Monsters_38 = workspace.Monsters;
+            local GetChildren_38 = Monsters_38.GetChildren;
+            local Children_81 = Monsters_38:GetChildren();
+            for i_81, v_81 in ipairs(Children_81) do
+                if not not i_81 then return end -- won't run
+                if not not v_81 then return end -- won't run
+                local FindFirstChildOfClass_38 = v_81.FindFirstChildOfClass;
+                local Highlight_38 = v_81:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_38 = not Highlight_38;
+                local var468 = (Not_Highlight_38 and 16422000);
+            end
+            local var469 = wait(0.1);
+            local Monsters_39 = workspace.Monsters;
+            local GetChildren_39 = Monsters_39.GetChildren;
+            local Children_82 = Monsters_39:GetChildren();
+            for i_82, v_82 in ipairs(Children_82) do
+                if not not i_82 then return end -- won't run
+                if not not v_82 then return end -- won't run
+                local FindFirstChildOfClass_39 = v_82.FindFirstChildOfClass;
+                local Highlight_39 = v_82:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_39 = not Highlight_39;
+                local var470 = (Not_Highlight_39 and 16422000);
+            end
+            local var471 = wait(0.1);
+            local Monsters_40 = workspace.Monsters;
+            local GetChildren_40 = Monsters_40.GetChildren;
+            local Children_83 = Monsters_40:GetChildren();
+            for i_83, v_83 in ipairs(Children_83) do
+                if not not i_83 then return end -- won't run
+                if not not v_83 then return end -- won't run
+                local FindFirstChildOfClass_40 = v_83.FindFirstChildOfClass;
+                local Highlight_40 = v_83:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_40 = not Highlight_40;
+                local var472 = (Not_Highlight_40 and 16422000);
+            end
+            local var473 = wait(0.1);
+            local Monsters_41 = workspace.Monsters;
+            local GetChildren_41 = Monsters_41.GetChildren;
+            local Children_84 = Monsters_41:GetChildren();
+            for i_84, v_84 in ipairs(Children_84) do
+                if not not i_84 then return end -- won't run
+                if not not v_84 then return end -- won't run
+                local FindFirstChildOfClass_41 = v_84.FindFirstChildOfClass;
+                local Highlight_41 = v_84:FindFirstChildOfClass("Highlight");
+                local Not_Highlight_41 = not Highlight_41;
+                local var474 = (Not_Highlight_41 and 16422000);
+            end
+            local var475 = wait(0.1);
+            local Monsters_42 = workspace.Monsters;
+            local GetChildren_42 = Monsters_42.GetChildren;
+            local Children_85 = Monsters_42:GetChildren();
+            for i_85, v_85 in ipairs(Children_85) do
+                if not not i_85 then return end -- won't run
+                if not not v_85 then return end -- won't run
+                error("C:\\Users\\Administrator\\Downloads\\yetanotherbot\\unveilr\\main:659: too many operations")
+            end
+            error("C:\\Users\\Administrator\\Downloads\\yetanotherbot\\unveilr\\main:1691: C:\\Users\\Administrator\\Downloads\\yetanotherbot\\unveilr\\main:659: too many operations")
+
+        end);
+    end)
+
+end);
+local ScrollingFrame_3 = Instance.new("ScrollingFrame");
+local UIListLayout_3 = Instance.new("UIListLayout");
+local TextButton_6 = Instance.new("TextButton");
+local AbsoluteContentSize_5 = UIListLayout.AbsoluteContentSize;
+local UDim2_Value_43 = UDim2_New(0, 0, 0, 1080);
+ScrollingFrame.CanvasSize = UDim2_Value_43;
+ScrollingFrame_3.Name = Tab_2;
+ScrollingFrame_3.Parent = Folder;
+ScrollingFrame_3.Active = true;
+ScrollingFrame_3.Visible = true;
+local Color3_Value_35 = Color3_FromRGB(31, 30, 46);
+ScrollingFrame_3.BackgroundColor3 = Color3_Value_35;
+ScrollingFrame_3.BorderSizePixel = 0;
+local UDim2_Value_44 = UDim2_New(0, 352, 0, 280);
+ScrollingFrame_3.Size = UDim2_Value_44;
+ScrollingFrame_3.ScrollBarThickness = 5;
+UIListLayout_3.Name = "TabListLayout";
+UIListLayout_3.Parent = ScrollingFrame_3;
+local Center_2 = Enum_HorizontalAlignment.Center;
+UIListLayout_3.HorizontalAlignment = Center_2;
+local LayoutOrder_3 = Enum_SortOrder.LayoutOrder;
+UIListLayout_3.SortOrder = LayoutOrder_3;
+local UDim_Value_9 = UDim_New(0, 5);
+UIListLayout_3.Padding = UDim_Value_9;
+TextButton_6.Name = TabButton;
+TextButton_6.Parent = ScrollingFrame;
+local Color3_Value_36 = Color3_FromRGB(55, 74, 251);
+TextButton_6.BackgroundColor3 = Color3_Value_36;
+TextButton_6.BorderSizePixel = 0;
+local UDim2_Value_45 = UDim2_New(0, 112, 0, 35);
+TextButton_6.Size = UDim2_Value_45;
+local Gotham_7 = Enum_Font.Gotham;
+TextButton_6.Font = Gotham_7;
+TextButton_6.Text = "自动收集";
+local Color3_Value_37 = Color3_FromRGB(255, 255, 255);
+TextButton_6.TextColor3 = Color3_Value_37;
+TextButton_6.TextSize = 14;
+TextButton_6.ZIndex = 2;
+local AbsoluteContentSize_6 = UIListLayout_3.AbsoluteContentSize;
+local UDim2_Value_46 = UDim2_New(0, 0, 0, 1080);
+ScrollingFrame_3.CanvasSize = UDim2_Value_46;
+local Connection_15;
+Connection_15 = ScrollingFrame_3.ChildAdded:Connect(function() -- args: Child;
+    local AbsoluteContentSize_14 = UIListLayout_3.AbsoluteContentSize;
+    local UDim2_Value_86 = UDim2_New(0, 0, 0, 1080);
+    ScrollingFrame_3.CanvasSize = UDim2_Value_86;
+
+end);
+local Connection_16;
+Connection_16 = ScrollingFrame_3.ChildRemoved:Connect(function() -- args: Child;
+    local AbsoluteContentSize_14 = UIListLayout_3.AbsoluteContentSize;
+    local UDim2_Value_86 = UDim2_New(0, 0, 0, 1080);
+    ScrollingFrame_3.CanvasSize = UDim2_Value_86;
+
+end);
+local Color3_Value_38 = Color3_FromRGB(55, 74, 251);
+TextButton_6.BackgroundColor3 = Color3_Value_38;
+local Color3_Value_39 = Color3_FromRGB(255, 255, 255);
+TextButton_6.TextColor3 = Color3_Value_39;
+local Connection_17;
+Connection_17 = TextButton_6.MouseButton1Down:Connect(function() -- args: X_8, Y_8;
+    local AbsoluteContentSize_15 = UIListLayout_3.AbsoluteContentSize;
+    local UDim2_Value_87 = UDim2_New(0, 0, 0, 1080);
+    ScrollingFrame_3.CanvasSize = UDim2_Value_87;
+    local Children_3 = ScrollingFrame:GetChildren();
+    for i_3, v_3 in pairs(Children_3) do
+        local IsA_2 = v_3.IsA;
+        local TextButton_12 = v_3:IsA("TextButton");
+        if not TextButton_12 then return end -- won't run
+        local Color3_Value_79 = Color3_FromRGB(40, 42, 60);
+        v_3.BackgroundColor3 = Color3_Value_79;
+        local Color3_Value_80 = Color3_FromRGB(190, 190, 190);
+        v_3.TextColor3 = Color3_Value_80;
+    end
+    local Children_4 = Folder:GetChildren();
+    for i_4, v_4 in pairs(Children_4) do
+        v_4.Visible = false;
+    end
+    ScrollingFrame_3.Visible = true;
+    local TweenService_10 = game:GetService("TweenService");
+    local New_11 = TweenInfo.new;
+    local Linear_3 = Enum_EasingStyle.Linear;
+    local In_3 = Enum_EasingDirection.In;
+    local _call244 = New_11(0.1, Linear_3, In_3);
+    local Color3_Value_81 = Color3_FromRGB(55, 74, 251);
+    local str_11 = TweenService:Create(TextButton_6, _call244, {
+        BackgroundColor3 = Color3_Value_81,
+    });
+    local Play_21 = str_11.Play;
+    local Play_22 = str_11:Play();
+    local TweenService_11 = game:GetService("TweenService");
+    local New_12 = TweenInfo.new;
+    local Linear_4 = Enum_EasingStyle.Linear;
+    local In_4 = Enum_EasingDirection.In;
+    local _call248 = New_12(0.1, Linear_4, In_4);
+    local Color3_Value_82 = Color3_FromRGB(255, 255, 255);
+    local str_12 = TweenService:Create(TextButton_6, _call248, {
+        TextColor3 = Color3_Value_82,
+    });
+    local Play_23 = str_12.Play;
+    local Play_24 = str_12:Play();
+
+end);
+local Frame_12 = Instance.new("Frame");
+local TextLabel_5 = Instance.new("TextLabel");
+local UIPadding_3 = Instance.new("UIPadding");
+local UICorner_9 = Instance.new("UICorner");
+local UICorner_10 = Instance.new("UICorner");
+local ImageLabel_3 = Instance.new("ImageLabel");
+local TextButton_7 = Instance.new("TextButton");
+local Frame_13 = Instance.new("Frame");
+Frame_12.Name = "灯泡(第一关)_Toggle";
+Frame_12.Parent = ScrollingFrame_3;
+local AbsoluteContentSize_7 = UIListLayout_3.AbsoluteContentSize;
+local UDim2_Value_47 = UDim2_New(0, 0, 0, 1080);
+ScrollingFrame_3.CanvasSize = UDim2_Value_47;
+local Color3_Value_40 = Color3_FromRGB(40, 42, 60);
+Frame_12.BackgroundColor3 = Color3_Value_40;
+Frame_12.BorderSizePixel = 0;
+local UDim2_Value_48 = UDim2_New(0, 326, 0, 28);
+Frame_12.Size = UDim2_Value_48;
+TextLabel_5.Name = ToggleName;
+TextLabel_5.Parent = Frame_12;
+local Color3_Value_41 = Color3_FromRGB(40, 42, 60);
+TextLabel_5.BackgroundColor3 = Color3_Value_41;
+TextLabel_5.BackgroundTransparency = 1;
+TextLabel_5.BorderSizePixel = 0;
+local UDim2_Value_49 = UDim2_New(0, 278, 0, 28);
+TextLabel_5.Size = UDim2_Value_49;
+local Gotham_8 = Enum_Font.Gotham;
+TextLabel_5.Font = Gotham_8;
+TextLabel_5.Text = "灯泡(第一关)";
+local Color3_Value_42 = Color3_FromRGB(255, 255, 255);
+TextLabel_5.TextColor3 = Color3_Value_42;
+TextLabel_5.TextSize = 13;
+local Left_3 = Enum_TextXAlignment.Left;
+TextLabel_5.TextXAlignment = Left_3;
+UIPadding_3.Name = "ToggleNamePadding";
+UIPadding_3.Parent = TextLabel_5;
+local UDim_Value_10 = UDim_New(0, 10);
+UIPadding_3.PaddingLeft = UDim_Value_10;
+UICorner_9.Name = "ToggleFrameCorner";
+UICorner_9.Parent = Frame_12;
+Frame_13.Name = "ToggleF";
+Frame_13.Parent = Frame_12;
+local Color3_Value_43 = Color3_FromRGB(55, 55, 75);
+Frame_13.BackgroundColor3 = Color3_Value_43;
+Frame_13.BackgroundTransparency = 0;
+Frame_13.BorderSizePixel = 0;
+local UDim2_Value_50 = UDim2_New(0.867647052, 0, 0.142857149, 0);
+Frame_13.Position = UDim2_Value_50;
+local UDim2_Value_51 = UDim2_New(0, 38, 0, 18);
+Frame_13.Size = UDim2_Value_51;
+local UDim_Value_11 = UDim_New(0, 25);
+UICorner_10.CornerRadius = UDim_Value_11;
+UICorner_10.Name = "ToggleCorner";
+UICorner_10.Parent = Frame_13;
+TextButton_7.Name = "ToggleButton";
+TextButton_7.Parent = Frame_13;
+local Color3_Value_44 = Color3_FromRGB(55, 55, 75);
+TextButton_7.BackgroundColor3 = Color3_Value_44;
+TextButton_7.BackgroundTransparency = 1;
+TextButton_7.BorderSizePixel = 0;
+local UDim2_Value_52 = UDim2_New(0, 45, 0, 23);
+TextButton_7.Size = UDim2_Value_52;
+local SourceSans_3 = Enum_Font.SourceSans;
+TextButton_7.Font = SourceSans_3;
+TextButton_7.Text = "";
+local Color3_Value_45 = Color3_FromRGB(0, 0, 0);
+TextButton_7.TextColor3 = Color3_Value_45;
+TextButton_7.TextSize = 14;
+ImageLabel_3.Name = "ToggleCircle";
+ImageLabel_3.Parent = Frame_13;
+local Color3_Value_46 = Color3_FromRGB(255, 255, 255);
+ImageLabel_3.BackgroundColor3 = Color3_Value_46;
+ImageLabel_3.BackgroundTransparency = 1;
+local UDim2_Value_53 = UDim2_New(0.093, 0, 0.153, 0);
+ImageLabel_3.Position = UDim2_Value_53;
+local UDim2_Value_54 = UDim2_New(0, 14, 0, 14);
+ImageLabel_3.Size = UDim2_Value_54;
+ImageLabel_3.Image = "rbxassetid://3570695787";
+local Slice_3 = Enum_ScaleType.Slice;
+ImageLabel_3.ScaleType = Slice_3;
+local Rect_Value_3 = Rect_New(100, 100, 100, 100);
+ImageLabel_3.SliceCenter = Rect_Value_3;
+ImageLabel_3.SliceScale = 0.12;
+local Connection_18;
+Connection_18 = TextButton_7.MouseButton1Down:Connect(function() -- args: X_9, Y_9;
+    local TweenService_12 = game:GetService("TweenService");
+    local New_13 = TweenInfo.new;
+    local _call250 = New_13(0.3);
+    local Color3_Value_83 = Color3_FromRGB(55, 74, 251);
+    local str_13 = TweenService:Create(Frame_13, _call250, {
+        BackgroundColor3 = Color3_Value_83,
+    });
+    local Play_25 = str_13.Play;
+    local Play_26 = str_13:Play();
+    local TweenService_13 = game:GetService("TweenService");
+    local New_14 = TweenInfo.new;
+    local _call252 = New_14(0.3);
+    local UDim2_Value_88 = UDim2_New(0.559, 0, 0.153, 0);
+    local str_14 = TweenService:Create(ImageLabel_3, _call252, {
+        Position = UDim2_Value_88,
+    });
+    local Play_27 = str_14.Play;
+    local Play_28 = str_14:Play();
+    local Success_64, Error_Message_64 = pcall(function(...)
+        local Spawn_3 = "spawn";
+        local Spawned_3 = task.spawn(function()
+            local Children_86 = workspace:GetChildren();
+            for i_86, v_86 in ipairs(Children_86) do
+                local var475 = (i_86 and 10808582);
+                local var476 = (var475 or 11138441);
+                local var477 = (v_86 and 14545371);
+                local Model = "Model";
+                local IsA_3 = v_86.IsA;
+                local Model_2 = v_86:IsA(Model);
+                if not not Model_2 then return end -- won't run
+                local Name_81 = "Name";
+                local Name_82 = v_86[Name_81];
+                local Name_82_is_string = (Name_82 == "LightBulb");
+                local var484 = (Name_82_is_string and 16642985);
+            end
+            local var485 = wait(0.1);
+            local Children_87 = workspace:GetChildren();
+            for i_87, v_87 in ipairs(Children_87) do
+                local var485 = (i_87 and 10808582);
+                local var486 = (var485 or 11138441);
+                local var487 = (v_87 and 14545371);
+                local IsA_4 = v_87.IsA;
+                local Model_3 = v_87:IsA(Model);
+                if not not Model_3 then return end -- won't run
+                local Name_83 = v_87[Name_81];
+                local Name_83_is_string = (Name_83 == "LightBulb");
+                local var488 = (Name_83_is_string and 16642985);
+            end
+            local var489 = wait(0.1);
+            local Children_88 = workspace:GetChildren();
+            for i_88, v_88 in ipairs(Children_88) do
+                local var489 = (i_88 and 10808582);
+                local var490 = (var489 or 11138441);
+                local var491 = (v_88 and 14545371);
+                local IsA_5 = v_88.IsA;
+                local Model_4 = v_88:IsA(Model);
+                if not not Model_4 then return end -- won't run
+                local Name_84 = v_88[Name_81];
+                local Name_84_is_string = (Name_84 == "LightBulb");
+                local var492 = (Name_84_is_string and 16642985);
+            end
+            local var493 = wait(0.1);
+            local Children_89 = workspace:GetChildren();
+            for i_89, v_89 in ipairs(Children_89) do
+                local var493 = (i_89 and 10808582);
+                local var494 = (var493 or 11138441);
+                local var495 = (v_89 and 14545371);
+                local IsA_6 = v_89.IsA;
+                local Model_5 = v_89:IsA(Model);
+                if not not Model_5 then return end -- won't run
+                local Name_85 = v_89[Name_81];
+                local Name_85_is_string = (Name_85 == "LightBulb");
+                local var496 = (Name_85_is_string and 16642985);
+            end
+            local var497 = wait(0.1);
+            local Children_90 = workspace:GetChildren();
+            for i_90, v_90 in ipairs(Children_90) do
+                local var497 = (i_90 and 10808582);
+                local var498 = (var497 or 11138441);
+                local var499 = (v_90 and 14545371);
+                local IsA_7 = v_90.IsA;
+                local Model_6 = v_90:IsA(Model);
+                if not not Model_6 then return end -- won't run
+                local Name_86 = v_90[Name_81];
+                local Name_86_is_string = (Name_86 == "LightBulb");
+                local var500 = (Name_86_is_string and 16642985);
+            end
+            local var501 = wait(0.1);
+            local Children_91 = workspace:GetChildren();
+            for i_91, v_91 in ipairs(Children_91) do
+                local var501 = (i_91 and 10808582);
+                local var502 = (var501 or 11138441);
+                local var503 = (v_91 and 14545371);
+                local IsA_8 = v_91.IsA;
+                local Model_7 = v_91:IsA(Model);
+                if not not Model_7 then return end -- won't run
+                local Name_87 = v_91[Name_81];
+                local Name_87_is_string = (Name_87 == "LightBulb");
+                local var504 = (Name_87_is_string and 16642985);
+            end
+            local var505 = wait(0.1);
+            local Children_92 = workspace:GetChildren();
+            for i_92, v_92 in ipairs(Children_92) do
+                local var505 = (i_92 and 10808582);
+                local var506 = (var505 or 11138441);
+                local var507 = (v_92 and 14545371);
+                local IsA_9 = v_92.IsA;
+                local Model_8 = v_92:IsA(Model);
+                if not not Model_8 then return end -- won't run
+                local Name_88 = v_92[Name_81];
+                local Name_88_is_string = (Name_88 == "LightBulb");
+                local var508 = (Name_88_is_string and 16642985);
+            end
+            local var509 = wait(0.1);
+            local Children_93 = workspace:GetChildren();
+            for i_93, v_93 in ipairs(Children_93) do
+                local var509 = (i_93 and 10808582);
+                local var510 = (var509 or 11138441);
+                local var511 = (v_93 and 14545371);
+                local IsA_10 = v_93.IsA;
+                local Model_9 = v_93:IsA(Model);
+                if not not Model_9 then return end -- won't run
+                local Name_89 = v_93[Name_81];
+                local Name_89_is_string = (Name_89 == "LightBulb");
+                local var512 = (Name_89_is_string and 16642985);
+            end
+            local var513 = wait(0.1);
+            local Children_94 = workspace:GetChildren();
+            for i_94, v_94 in ipairs(Children_94) do
+                local var513 = (i_94 and 10808582);
+                local var514 = (var513 or 11138441);
+                local var515 = (v_94 and 14545371);
+                local IsA_11 = v_94.IsA;
+                local Model_10 = v_94:IsA(Model);
+                if not not Model_10 then return end -- won't run
+                local Name_90 = v_94[Name_81];
+                local Name_90_is_string = (Name_90 == "LightBulb");
+                local var516 = (Name_90_is_string and 16642985);
+            end
+            local var517 = wait(0.1);
+            local Children_95 = workspace:GetChildren();
+            for i_95, v_95 in ipairs(Children_95) do
+                local var517 = (i_95 and 10808582);
+                local var518 = (var517 or 11138441);
+                local var519 = (v_95 and 14545371);
+                local IsA_12 = v_95.IsA;
+                local Model_11 = v_95:IsA(Model);
+                if not not Model_11 then return end -- won't run
+                local Name_91 = v_95[Name_81];
+                local Name_91_is_string = (Name_91 == "LightBulb");
+                local var520 = (Name_91_is_string and 16642985);
+            end
+            local var521 = wait(0.1);
+            local Children_96 = workspace:GetChildren();
+            for i_96, v_96 in ipairs(Children_96) do
+                local var521 = (i_96 and 10808582);
+                local var522 = (var521 or 11138441);
+                local var523 = (v_96 and 14545371);
+                local IsA_13 = v_96.IsA;
+                local Model_12 = v_96:IsA(Model);
+                if not not Model_12 then return end -- won't run
+                local Name_92 = v_96[Name_81];
+                local Name_92_is_string = (Name_92 == "LightBulb");
+                local var524 = (Name_92_is_string and 16642985);
+            end
+            local var525 = wait(0.1);
+            local Children_97 = workspace:GetChildren();
+            for i_97, v_97 in ipairs(Children_97) do
+                local var525 = (i_97 and 10808582);
+                local var526 = (var525 or 11138441);
+                local var527 = (v_97 and 14545371);
+                local IsA_14 = v_97.IsA;
+                local Model_13 = v_97:IsA(Model);
+                if not not Model_13 then return end -- won't run
+                local Name_93 = v_97[Name_81];
+                local Name_93_is_string = (Name_93 == "LightBulb");
+                local var528 = (Name_93_is_string and 16642985);
+            end
+            local var529 = wait(0.1);
+            local Children_98 = workspace:GetChildren();
+            for i_98, v_98 in ipairs(Children_98) do
+                local var529 = (i_98 and 10808582);
+                local var530 = (var529 or 11138441);
+                local var531 = (v_98 and 14545371);
+                local IsA_15 = v_98.IsA;
+                local Model_14 = v_98:IsA(Model);
+                if not not Model_14 then return end -- won't run
+                local Name_94 = v_98[Name_81];
+                local Name_94_is_string = (Name_94 == "LightBulb");
+                local var532 = (Name_94_is_string and 16642985);
+            end
+            local var533 = wait(0.1);
+            local Children_99 = workspace:GetChildren();
+            for i_99, v_99 in ipairs(Children_99) do
+                local var533 = (i_99 and 10808582);
+                local var534 = (var533 or 11138441);
+                local var535 = (v_99 and 14545371);
+                local IsA_16 = v_99.IsA;
+                local Model_15 = v_99:IsA(Model);
+                if not not Model_15 then return end -- won't run
+                local Name_95 = v_99[Name_81];
+                local Name_95_is_string = (Name_95 == "LightBulb");
+                local var536 = (Name_95_is_string and 16642985);
+            end
+            local var537 = wait(0.1);
+            local Children_100 = workspace:GetChildren();
+            for i_100, v_100 in ipairs(Children_100) do
+                local var537 = (i_100 and 10808582);
+                local var538 = (var537 or 11138441);
+                local var539 = (v_100 and 14545371);
+                local IsA_17 = v_100.IsA;
+                local Model_16 = v_100:IsA(Model);
+                if not not Model_16 then return end -- won't run
+                local Name_96 = v_100[Name_81];
+                local Name_96_is_string = (Name_96 == "LightBulb");
+                local var540 = (Name_96_is_string and 16642985);
+            end
+            local var541 = wait(0.1);
+            local Children_101 = workspace:GetChildren();
+            for i_101, v_101 in ipairs(Children_101) do
+                local var541 = (i_101 and 10808582);
+                local var542 = (var541 or 11138441);
+                local var543 = (v_101 and 14545371);
+                local IsA_18 = v_101.IsA;
+                local Model_17 = v_101:IsA(Model);
+                if not not Model_17 then return end -- won't run
+                local Name_97 = v_101[Name_81];
+                local Name_97_is_string = (Name_97 == "LightBulb");
+                local var544 = (Name_97_is_string and 16642985);
+            end
+            local var545 = wait(0.1);
+            local Children_102 = workspace:GetChildren();
+            for i_102, v_102 in ipairs(Children_102) do
+                local var545 = (i_102 and 10808582);
+                local var546 = (var545 or 11138441);
+                local var547 = (v_102 and 14545371);
+                local IsA_19 = v_102.IsA;
+                local Model_18 = v_102:IsA(Model);
+                if not not Model_18 then return end -- won't run
+                local Name_98 = v_102[Name_81];
+                local Name_98_is_string = (Name_98 == "LightBulb");
+                local var548 = (Name_98_is_string and 16642985);
+            end
+            local var549 = wait(0.1);
+            local Children_103 = workspace:GetChildren();
+            for i_103, v_103 in ipairs(Children_103) do
+                local var549 = (i_103 and 10808582);
+                local var550 = (var549 or 11138441);
+                local var551 = (v_103 and 14545371);
+                local IsA_20 = v_103.IsA;
+                local Model_19 = v_103:IsA(Model);
+                if not not Model_19 then return end -- won't run
+                local Name_99 = v_103[Name_81];
+                local Name_99_is_string = (Name_99 == "LightBulb");
+                local var552 = (Name_99_is_string and 16642985);
+            end
+            local var553 = wait(0.1);
+            local Children_104 = workspace:GetChildren();
+            for i_104, v_104 in ipairs(Children_104) do
+                local var553 = (i_104 and 10808582);
+                local var554 = (var553 or 11138441);
+                local var555 = (v_104 and 14545371);
+                local IsA_21 = v_104.IsA;
+                local Model_20 = v_104:IsA(Model);
+                if not not Model_20 then return end -- won't run
+                local Name_100 = v_104[Name_81];
+                local Name_100_is_string = (Name_100 == "LightBulb");
+                local var556 = (Name_100_is_string and 16642985);
+            end
+            local var557 = wait(0.1);
+            local Children_105 = workspace:GetChildren();
+            for i_105, v_105 in ipairs(Children_105) do
+                local var557 = (i_105 and 10808582);
+                local var558 = (var557 or 11138441);
+                local var559 = (v_105 and 14545371);
+                local IsA_22 = v_105.IsA;
+                local Model_21 = v_105:IsA(Model);
+                if not not Model_21 then return end -- won't run
+                local Name_101 = v_105[Name_81];
+                local Name_101_is_string = (Name_101 == "LightBulb");
+                local var560 = (Name_101_is_string and 16642985);
+            end
+            local var561 = wait(0.1);
+            local Children_106 = workspace:GetChildren();
+            for i_106, v_106 in ipairs(Children_106) do
+                local var561 = (i_106 and 10808582);
+                local var562 = (var561 or 11138441);
+                local var563 = (v_106 and 14545371);
+                local IsA_23 = v_106.IsA;
+                local Model_22 = v_106:IsA(Model);
+                if not not Model_22 then return end -- won't run
+                local Name_102 = v_106[Name_81];
+                local Name_102_is_string = (Name_102 == "LightBulb");
+                local var564 = (Name_102_is_string and 16642985);
+            end
+            local var565 = wait(0.1);
+            local Children_107 = workspace:GetChildren();
+            for i_107, v_107 in ipairs(Children_107) do
+                local var565 = (i_107 and 10808582);
+                local var566 = (var565 or 11138441);
+                local var567 = (v_107 and 14545371);
+                local IsA_24 = v_107.IsA;
+                local Model_23 = v_107:IsA(Model);
+                if not not Model_23 then return end -- won't run
+                local Name_103 = v_107[Name_81];
+                local Name_103_is_string = (Name_103 == "LightBulb");
+                local var568 = (Name_103_is_string and 16642985);
+            end
+            local var569 = wait(0.1);
+            local Children_108 = workspace:GetChildren();
+            for i_108, v_108 in ipairs(Children_108) do
+                local var569 = (i_108 and 10808582);
+                local var570 = (var569 or 11138441);
+                local var571 = (v_108 and 14545371);
+                local IsA_25 = v_108.IsA;
+                local Model_24 = v_108:IsA(Model);
+                if not not Model_24 then return end -- won't run
+                local Name_104 = v_108[Name_81];
+                local Name_104_is_string = (Name_104 == "LightBulb");
+                local var572 = (Name_104_is_string and 16642985);
+            end
+            local var573 = wait(0.1);
+            local Children_109 = workspace:GetChildren();
+            for i_109, v_109 in ipairs(Children_109) do
+                local var573 = (i_109 and 10808582);
+                local var574 = (var573 or 11138441);
+                local var575 = (v_109 and 14545371);
+                local IsA_26 = v_109.IsA;
+                local Model_25 = v_109:IsA(Model);
+                if not not Model_25 then return end -- won't run
+                local Name_105 = v_109[Name_81];
+                local Name_105_is_string = (Name_105 == "LightBulb");
+                local var576 = (Name_105_is_string and 16642985);
+            end
+            local var577 = wait(0.1);
+            local Children_110 = workspace:GetChildren();
+            for i_110, v_110 in ipairs(Children_110) do
+                local var577 = (i_110 and 10808582);
+                local var578 = (var577 or 11138441);
+                local var579 = (v_110 and 14545371);
+                local IsA_27 = v_110.IsA;
+                local Model_26 = v_110:IsA(Model);
+                if not not Model_26 then return end -- won't run
+                local Name_106 = v_110[Name_81];
+                local Name_106_is_string = (Name_106 == "LightBulb");
+                local var580 = (Name_106_is_string and 16642985);
+            end
+            local var581 = wait(0.1);
+            local Children_111 = workspace:GetChildren();
+            for i_111, v_111 in ipairs(Children_111) do
+                local var581 = (i_111 and 10808582);
+                local var582 = (var581 or 11138441);
+                local var583 = (v_111 and 14545371);
+                local IsA_28 = v_111.IsA;
+                local Model_27 = v_111:IsA(Model);
+                if not not Model_27 then return end -- won't run
+                local Name_107 = v_111[Name_81];
+                local Name_107_is_string = (Name_107 == "LightBulb");
+                local var584 = (Name_107_is_string and 16642985);
+            end
+            local var585 = wait(0.1);
+            local Children_112 = workspace:GetChildren();
+            for i_112, v_112 in ipairs(Children_112) do
+                local var585 = (i_112 and 10808582);
+                local var586 = (var585 or 11138441);
+                local var587 = (v_112 and 14545371);
+                local IsA_29 = v_112.IsA;
+                local Model_28 = v_112:IsA(Model);
+                if not not Model_28 then return end -- won't run
+                local Name_108 = v_112[Name_81];
+                local Name_108_is_string = (Name_108 == "LightBulb");
+                local var588 = (Name_108_is_string and 16642985);
+            end
+            local var589 = wait(0.1);
+            local Children_113 = workspace:GetChildren();
+            for i_113, v_113 in ipairs(Children_113) do
+                local var589 = (i_113 and 10808582);
+                local var590 = (var589 or 11138441);
+                local var591 = (v_113 and 14545371);
+                local IsA_30 = v_113.IsA;
+                local Model_29 = v_113:IsA(Model);
+                if not not Model_29 then return end -- won't run
+                local Name_109 = v_113[Name_81];
+                local Name_109_is_string = (Name_109 == "LightBulb");
+                local var592 = (Name_109_is_string and 16642985);
+            end
+            local var593 = wait(0.1);
+            local Children_114 = workspace:GetChildren();
+            for i_114, v_114 in ipairs(Children_114) do
+                local var593 = (i_114 and 10808582);
+                local var594 = (var593 or 11138441);
+                local var595 = (v_114 and 14545371);
+                local IsA_31 = v_114.IsA;
+                local Model_30 = v_114:IsA(Model);
+                if not not Model_30 then return end -- won't run
+                local Name_110 = v_114[Name_81];
+                local Name_110_is_string = (Name_110 == "LightBulb");
+                local var596 = (Name_110_is_string and 16642985);
+            end
+            local var597 = wait(0.1);
+            local Children_115 = workspace:GetChildren();
+            for i_115, v_115 in ipairs(Children_115) do
+                local var597 = (i_115 and 10808582);
+                local var598 = (var597 or 11138441);
+                local var599 = (v_115 and 14545371);
+                local IsA_32 = v_115.IsA;
+                local Model_31 = v_115:IsA(Model);
+                if not not Model_31 then return end -- won't run
+                local Name_111 = v_115[Name_81];
+                local Name_111_is_string = (Name_111 == "LightBulb");
+                local var600 = (Name_111_is_string and 16642985);
+            end
+            local var601 = wait(0.1);
+            local Children_116 = workspace:GetChildren();
+            for i_116, v_116 in ipairs(Children_116) do
+                local var601 = (i_116 and 10808582);
+                local var602 = (var601 or 11138441);
+                local var603 = (v_116 and 14545371);
+                local IsA_33 = v_116.IsA;
+                local Model_32 = v_116:IsA(Model);
+                if not not Model_32 then return end -- won't run
+                local Name_112 = v_116[Name_81];
+                local Name_112_is_string = (Name_112 == "LightBulb");
+                local var604 = (Name_112_is_string and 16642985);
+            end
+            local var605 = wait(0.1);
+            local Children_117 = workspace:GetChildren();
+            for i_117, v_117 in ipairs(Children_117) do
+                local var605 = (i_117 and 10808582);
+            error("C:\\Users\\Administrator\\Downloads\\yetanotherbot\\unveilr\\main:659: too many operations")
+            end
+
+        end);
+    end)
+
+end);
+local Frame_14 = Instance.new("Frame");
+local TextLabel_6 = Instance.new("TextLabel");
+local UIPadding_4 = Instance.new("UIPadding");
+local UICorner_11 = Instance.new("UICorner");
+local UICorner_12 = Instance.new("UICorner");
+local ImageLabel_4 = Instance.new("ImageLabel");
+local TextButton_8 = Instance.new("TextButton");
+local Frame_15 = Instance.new("Frame");
+Frame_14.Name = "气瓶(第二关)_Toggle";
+Frame_14.Parent = ScrollingFrame_3;
+local AbsoluteContentSize_8 = UIListLayout_3.AbsoluteContentSize;
+local UDim2_Value_55 = UDim2_New(0, 0, 0, 1080);
+ScrollingFrame_3.CanvasSize = UDim2_Value_55;
+local Color3_Value_47 = Color3_FromRGB(40, 42, 60);
+Frame_14.BackgroundColor3 = Color3_Value_47;
+Frame_14.BorderSizePixel = 0;
+local UDim2_Value_56 = UDim2_New(0, 326, 0, 28);
+Frame_14.Size = UDim2_Value_56;
+TextLabel_6.Name = ToggleName;
+TextLabel_6.Parent = Frame_14;
+local Color3_Value_48 = Color3_FromRGB(40, 42, 60);
+TextLabel_6.BackgroundColor3 = Color3_Value_48;
+TextLabel_6.BackgroundTransparency = 1;
+TextLabel_6.BorderSizePixel = 0;
+local UDim2_Value_57 = UDim2_New(0, 278, 0, 28);
+TextLabel_6.Size = UDim2_Value_57;
+local Gotham_9 = Enum_Font.Gotham;
+TextLabel_6.Font = Gotham_9;
+TextLabel_6.Text = "气瓶(第二关)";
+local Color3_Value_49 = Color3_FromRGB(255, 255, 255);
+TextLabel_6.TextColor3 = Color3_Value_49;
+TextLabel_6.TextSize = 13;
+local Left_4 = Enum_TextXAlignment.Left;
+TextLabel_6.TextXAlignment = Left_4;
+UIPadding_4.Name = "ToggleNamePadding";
+UIPadding_4.Parent = TextLabel_6;
+local UDim_Value_12 = UDim_New(0, 10);
+UIPadding_4.PaddingLeft = UDim_Value_12;
+UICorner_11.Name = "ToggleFrameCorner";
+UICorner_11.Parent = Frame_14;
+Frame_15.Name = "ToggleF";
+Frame_15.Parent = Frame_14;
+local Color3_Value_50 = Color3_FromRGB(55, 55, 75);
+Frame_15.BackgroundColor3 = Color3_Value_50;
+Frame_15.BackgroundTransparency = 0;
+Frame_15.BorderSizePixel = 0;
+local UDim2_Value_58 = UDim2_New(0.867647052, 0, 0.142857149, 0);
+Frame_15.Position = UDim2_Value_58;
+local UDim2_Value_59 = UDim2_New(0, 38, 0, 18);
+Frame_15.Size = UDim2_Value_59;
+local UDim_Value_13 = UDim_New(0, 25);
+UICorner_12.CornerRadius = UDim_Value_13;
+UICorner_12.Name = "ToggleCorner";
+UICorner_12.Parent = Frame_15;
+TextButton_8.Name = "ToggleButton";
+TextButton_8.Parent = Frame_15;
+local Color3_Value_51 = Color3_FromRGB(55, 55, 75);
+TextButton_8.BackgroundColor3 = Color3_Value_51;
+TextButton_8.BackgroundTransparency = 1;
+TextButton_8.BorderSizePixel = 0;
+local UDim2_Value_60 = UDim2_New(0, 45, 0, 23);
+TextButton_8.Size = UDim2_Value_60;
+local SourceSans_4 = Enum_Font.SourceSans;
+TextButton_8.Font = SourceSans_4;
+TextButton_8.Text = "";
+local Color3_Value_52 = Color3_FromRGB(0, 0, 0);
+TextButton_8.TextColor3 = Color3_Value_52;
+TextButton_8.TextSize = 14;
+ImageLabel_4.Name = "ToggleCircle";
+ImageLabel_4.Parent = Frame_15;
+local Color3_Value_53 = Color3_FromRGB(255, 255, 255);
+ImageLabel_4.BackgroundColor3 = Color3_Value_53;
+ImageLabel_4.BackgroundTransparency = 1;
+local UDim2_Value_61 = UDim2_New(0.093, 0, 0.153, 0);
+ImageLabel_4.Position = UDim2_Value_61;
+local UDim2_Value_62 = UDim2_New(0, 14, 0, 14);
+ImageLabel_4.Size = UDim2_Value_62;
+ImageLabel_4.Image = "rbxassetid://3570695787";
+local Slice_4 = Enum_ScaleType.Slice;
+ImageLabel_4.ScaleType = Slice_4;
+local Rect_Value_4 = Rect_New(100, 100, 100, 100);
+ImageLabel_4.SliceCenter = Rect_Value_4;
+ImageLabel_4.SliceScale = 0.12;
+local Connection_19;
+Connection_19 = TextButton_8.MouseButton1Down:Connect(function() -- args: X_10, Y_10;
+    local TweenService_14 = game:GetService("TweenService");
+    local New_15 = TweenInfo.new;
+    local _call257 = New_15(0.3);
+    local Color3_Value_84 = Color3_FromRGB(55, 74, 251);
+    local str_15 = TweenService:Create(Frame_15, _call257, {
+        BackgroundColor3 = Color3_Value_84,
+    });
+    local Play_29 = str_15.Play;
+    local Play_30 = str_15:Play();
+    local TweenService_15 = game:GetService("TweenService");
+    local New_16 = TweenInfo.new;
+    local _call259 = New_16(0.3);
+    local UDim2_Value_89 = UDim2_New(0.559, 0, 0.153, 0);
+    local str_16 = TweenService:Create(ImageLabel_4, _call259, {
+        Position = UDim2_Value_89,
+    });
+    local Play_31 = str_16.Play;
+    local Play_32 = str_16:Play();
+    local Success_65, Error_Message_65 = pcall(function(...)
+        local Spawn_4 = "spawn";
+        local Spawned_4 = task.spawn(function(p1_0, p2_0)
+            local Children_118 = workspace:GetChildren();
+            for i_118, v_118 in ipairs(Children_118) do
+                if not not i_118 then return end -- won't run
+                local var605 = (v_118 and 10319888);
+                local var606 = (var605 or 13947447);
+                local Model_33 = "Model";
+                local IsA_34 = v_118.IsA;
+                local Model_34 = v_118:IsA(Model_33);
+                local var609 = (Model_34 and 13633673);
+                local Name_113 = "Name";
+                local Name_114 = v_118[Name_113];
+                local Name_114_is_string = (Name_114 == "GasCanister");
+            end
+            local var616 = wait(0.1);
+            local Children_119 = workspace:GetChildren();
+            for i_119, v_119 in ipairs(Children_119) do
+                if not not i_119 then return end -- won't run
+                local var616 = (v_119 and 10319888);
+                local var617 = (var616 or 13947447);
+                local IsA_35 = v_119.IsA;
+                local Model_35 = v_119:IsA(Model_33);
+                local var618 = (Model_35 and 13633673);
+                local Name_115 = v_119[Name_113];
+                local Name_115_is_string = (Name_115 == "GasCanister");
+            end
+            local var619 = wait(0.1);
+            local Children_120 = workspace:GetChildren();
+            for i_120, v_120 in ipairs(Children_120) do
+                if not not i_120 then return end -- won't run
+                local var619 = (v_120 and 10319888);
+                local var620 = (var619 or 13947447);
+                local IsA_36 = v_120.IsA;
+                local Model_36 = v_120:IsA(Model_33);
+                local var621 = (Model_36 and 13633673);
+                local Name_116 = v_120[Name_113];
+                local Name_116_is_string = (Name_116 == "GasCanister");
+            end
+            local var622 = wait(0.1);
+            local Children_121 = workspace:GetChildren();
+            for i_121, v_121 in ipairs(Children_121) do
+                if not not i_121 then return end -- won't run
+                local var622 = (v_121 and 10319888);
+                local var623 = (var622 or 13947447);
+                local IsA_37 = v_121.IsA;
+                local Model_37 = v_121:IsA(Model_33);
+                local var624 = (Model_37 and 13633673);
+                local Name_117 = v_121[Name_113];
+                local Name_117_is_string = (Name_117 == "GasCanister");
+            end
+            local var625 = wait(0.1);
+            local Children_122 = workspace:GetChildren();
+            for i_122, v_122 in ipairs(Children_122) do
+                if not not i_122 then return end -- won't run
+                local var625 = (v_122 and 10319888);
+                local var626 = (var625 or 13947447);
+                local IsA_38 = v_122.IsA;
+                local Model_38 = v_122:IsA(Model_33);
+                local var627 = (Model_38 and 13633673);
+                local Name_118 = v_122[Name_113];
+                local Name_118_is_string = (Name_118 == "GasCanister");
+            end
+            local var628 = wait(0.1);
+            local Children_123 = workspace:GetChildren();
+            for i_123, v_123 in ipairs(Children_123) do
+                if not not i_123 then return end -- won't run
+                local var628 = (v_123 and 10319888);
+                local var629 = (var628 or 13947447);
+                local IsA_39 = v_123.IsA;
+                local Model_39 = v_123:IsA(Model_33);
+                local var630 = (Model_39 and 13633673);
+                local Name_119 = v_123[Name_113];
+                local Name_119_is_string = (Name_119 == "GasCanister");
+            end
+            local var631 = wait(0.1);
+            local Children_124 = workspace:GetChildren();
+            for i_124, v_124 in ipairs(Children_124) do
+                if not not i_124 then return end -- won't run
+                local var631 = (v_124 and 10319888);
+                local var632 = (var631 or 13947447);
+                local IsA_40 = v_124.IsA;
+                local Model_40 = v_124:IsA(Model_33);
+                local var633 = (Model_40 and 13633673);
+                local Name_120 = v_124[Name_113];
+                local Name_120_is_string = (Name_120 == "GasCanister");
+            end
+            local var634 = wait(0.1);
+            local Children_125 = workspace:GetChildren();
+            for i_125, v_125 in ipairs(Children_125) do
+                if not not i_125 then return end -- won't run
+                local var634 = (v_125 and 10319888);
+                local var635 = (var634 or 13947447);
+                local IsA_41 = v_125.IsA;
+                local Model_41 = v_125:IsA(Model_33);
+                local var636 = (Model_41 and 13633673);
+                local Name_121 = v_125[Name_113];
+                local Name_121_is_string = (Name_121 == "GasCanister");
+            end
+            local var637 = wait(0.1);
+            local Children_126 = workspace:GetChildren();
+            for i_126, v_126 in ipairs(Children_126) do
+                if not not i_126 then return end -- won't run
+                local var637 = (v_126 and 10319888);
+                local var638 = (var637 or 13947447);
+                local IsA_42 = v_126.IsA;
+                local Model_42 = v_126:IsA(Model_33);
+                local var639 = (Model_42 and 13633673);
+                local Name_122 = v_126[Name_113];
+                local Name_122_is_string = (Name_122 == "GasCanister");
+            end
+            local var640 = wait(0.1);
+            local Children_127 = workspace:GetChildren();
+            for i_127, v_127 in ipairs(Children_127) do
+                if not not i_127 then return end -- won't run
+                local var640 = (v_127 and 10319888);
+                local var641 = (var640 or 13947447);
+                local IsA_43 = v_127.IsA;
+                local Model_43 = v_127:IsA(Model_33);
+                local var642 = (Model_43 and 13633673);
+                local Name_123 = v_127[Name_113];
+                local Name_123_is_string = (Name_123 == "GasCanister");
+            end
+            local var643 = wait(0.1);
+            local Children_128 = workspace:GetChildren();
+            for i_128, v_128 in ipairs(Children_128) do
+                if not not i_128 then return end -- won't run
+                local var643 = (v_128 and 10319888);
+                local var644 = (var643 or 13947447);
+                local IsA_44 = v_128.IsA;
+                local Model_44 = v_128:IsA(Model_33);
+                local var645 = (Model_44 and 13633673);
+                local Name_124 = v_128[Name_113];
+                local Name_124_is_string = (Name_124 == "GasCanister");
+            end
+            local var646 = wait(0.1);
+            local Children_129 = workspace:GetChildren();
+            for i_129, v_129 in ipairs(Children_129) do
+                if not not i_129 then return end -- won't run
+                local var646 = (v_129 and 10319888);
+                local var647 = (var646 or 13947447);
+                local IsA_45 = v_129.IsA;
+                local Model_45 = v_129:IsA(Model_33);
+                local var648 = (Model_45 and 13633673);
+                local Name_125 = v_129[Name_113];
+                local Name_125_is_string = (Name_125 == "GasCanister");
+            end
+            local var649 = wait(0.1);
+            local Children_130 = workspace:GetChildren();
+            for i_130, v_130 in ipairs(Children_130) do
+                if not not i_130 then return end -- won't run
+                local var649 = (v_130 and 10319888);
+                local var650 = (var649 or 13947447);
+                local IsA_46 = v_130.IsA;
+                local Model_46 = v_130:IsA(Model_33);
+                local var651 = (Model_46 and 13633673);
+                local Name_126 = v_130[Name_113];
+                local Name_126_is_string = (Name_126 == "GasCanister");
+            end
+            local var652 = wait(0.1);
+            local Children_131 = workspace:GetChildren();
+            for i_131, v_131 in ipairs(Children_131) do
+                if not not i_131 then return end -- won't run
+                local var652 = (v_131 and 10319888);
+                local var653 = (var652 or 13947447);
+                local IsA_47 = v_131.IsA;
+                local Model_47 = v_131:IsA(Model_33);
+                local var654 = (Model_47 and 13633673);
+                local Name_127 = v_131[Name_113];
+                local Name_127_is_string = (Name_127 == "GasCanister");
+            end
+            local var655 = wait(0.1);
+            local Children_132 = workspace:GetChildren();
+            for i_132, v_132 in ipairs(Children_132) do
+                if not not i_132 then return end -- won't run
+                local var655 = (v_132 and 10319888);
+                local var656 = (var655 or 13947447);
+                local IsA_48 = v_132.IsA;
+                local Model_48 = v_132:IsA(Model_33);
+                local var657 = (Model_48 and 13633673);
+                local Name_128 = v_132[Name_113];
+                local Name_128_is_string = (Name_128 == "GasCanister");
+            end
+            local var658 = wait(0.1);
+            local Children_133 = workspace:GetChildren();
+            for i_133, v_133 in ipairs(Children_133) do
+                if not not i_133 then return end -- won't run
+                local var658 = (v_133 and 10319888);
+                local var659 = (var658 or 13947447);
+                local IsA_49 = v_133.IsA;
+                local Model_49 = v_133:IsA(Model_33);
+                local var660 = (Model_49 and 13633673);
+                local Name_129 = v_133[Name_113];
+                local Name_129_is_string = (Name_129 == "GasCanister");
+            end
+            local var661 = wait(0.1);
+            local Children_134 = workspace:GetChildren();
+            for i_134, v_134 in ipairs(Children_134) do
+                if not not i_134 then return end -- won't run
+                local var661 = (v_134 and 10319888);
+                local var662 = (var661 or 13947447);
+                local IsA_50 = v_134.IsA;
+                local Model_50 = v_134:IsA(Model_33);
+                local var663 = (Model_50 and 13633673);
+                local Name_130 = v_134[Name_113];
+                local Name_130_is_string = (Name_130 == "GasCanister");
+            end
+            local var664 = wait(0.1);
+            local Children_135 = workspace:GetChildren();
+            for i_135, v_135 in ipairs(Children_135) do
+                if not not i_135 then return end -- won't run
+                local var664 = (v_135 and 10319888);
+                local var665 = (var664 or 13947447);
+                local IsA_51 = v_135.IsA;
+                local Model_51 = v_135:IsA(Model_33);
+                local var666 = (Model_51 and 13633673);
+                local Name_131 = v_135[Name_113];
+                local Name_131_is_string = (Name_131 == "GasCanister");
+            end
+            local var667 = wait(0.1);
+            local Children_136 = workspace:GetChildren();
+            for i_136, v_136 in ipairs(Children_136) do
+                if not not i_136 then return end -- won't run
+                local var667 = (v_136 and 10319888);
+                local var668 = (var667 or 13947447);
+                local IsA_52 = v_136.IsA;
+                local Model_52 = v_136:IsA(Model_33);
+                local var669 = (Model_52 and 13633673);
+                local Name_132 = v_136[Name_113];
+                local Name_132_is_string = (Name_132 == "GasCanister");
+            end
+            local var670 = wait(0.1);
+            local Children_137 = workspace:GetChildren();
+            for i_137, v_137 in ipairs(Children_137) do
+                if not not i_137 then return end -- won't run
+                local var670 = (v_137 and 10319888);
+                local var671 = (var670 or 13947447);
+                local IsA_53 = v_137.IsA;
+                local Model_53 = v_137:IsA(Model_33);
+                local var672 = (Model_53 and 13633673);
+                local Name_133 = v_137[Name_113];
+                local Name_133_is_string = (Name_133 == "GasCanister");
+            end
+            local var673 = wait(0.1);
+            local Children_138 = workspace:GetChildren();
+            for i_138, v_138 in ipairs(Children_138) do
+                if not not i_138 then return end -- won't run
+                local var673 = (v_138 and 10319888);
+                local var674 = (var673 or 13947447);
+                local IsA_54 = v_138.IsA;
+                local Model_54 = v_138:IsA(Model_33);
+                local var675 = (Model_54 and 13633673);
+                local Name_134 = v_138[Name_113];
+                local Name_134_is_string = (Name_134 == "GasCanister");
+            end
+            local var676 = wait(0.1);
+            local Children_139 = workspace:GetChildren();
+            for i_139, v_139 in ipairs(Children_139) do
+                if not not i_139 then return end -- won't run
+                local var676 = (v_139 and 10319888);
+                local var677 = (var676 or 13947447);
+                local IsA_55 = v_139.IsA;
+                local Model_55 = v_139:IsA(Model_33);
+                local var678 = (Model_55 and 13633673);
+                local Name_135 = v_139[Name_113];
+                local Name_135_is_string = (Name_135 == "GasCanister");
+            end
+            local var679 = wait(0.1);
+            local Children_140 = workspace:GetChildren();
+            for i_140, v_140 in ipairs(Children_140) do
+                if not not i_140 then return end -- won't run
+                local var679 = (v_140 and 10319888);
+                local var680 = (var679 or 13947447);
+                local IsA_56 = v_140.IsA;
+                local Model_56 = v_140:IsA(Model_33);
+                local var681 = (Model_56 and 13633673);
+                local Name_136 = v_140[Name_113];
+                local Name_136_is_string = (Name_136 == "GasCanister");
+            end
+            local var682 = wait(0.1);
+            local Children_141 = workspace:GetChildren();
+            for i_141, v_141 in ipairs(Children_141) do
+                if not not i_141 then return end -- won't run
+                local var682 = (v_141 and 10319888);
+                local var683 = (var682 or 13947447);
+                local IsA_57 = v_141.IsA;
+                local Model_57 = v_141:IsA(Model_33);
+                local var684 = (Model_57 and 13633673);
+                local Name_137 = v_141[Name_113];
+                local Name_137_is_string = (Name_137 == "GasCanister");
+            end
+            local var685 = wait(0.1);
+            local Children_142 = workspace:GetChildren();
+            for i_142, v_142 in ipairs(Children_142) do
+                if not not i_142 then return end -- won't run
+                local var685 = (v_142 and 10319888);
+                local var686 = (var685 or 13947447);
+                local IsA_58 = v_142.IsA;
+                local Model_58 = v_142:IsA(Model_33);
+                local var687 = (Model_58 and 13633673);
+                local Name_138 = v_142[Name_113];
+                local Name_138_is_string = (Name_138 == "GasCanister");
+            end
+            local var688 = wait(0.1);
+            local Children_143 = workspace:GetChildren();
+            for i_143, v_143 in ipairs(Children_143) do
+                if not not i_143 then return end -- won't run
+                local var688 = (v_143 and 10319888);
+                local var689 = (var688 or 13947447);
+                local IsA_59 = v_143.IsA;
+                local Model_59 = v_143:IsA(Model_33);
+                local var690 = (Model_59 and 13633673);
+                local Name_139 = v_143[Name_113];
+                local Name_139_is_string = (Name_139 == "GasCanister");
+            end
+            local var691 = wait(0.1);
+            local Children_144 = workspace:GetChildren();
+            for i_144, v_144 in ipairs(Children_144) do
+                if not not i_144 then return end -- won't run
+                local var691 = (v_144 and 10319888);
+                local var692 = (var691 or 13947447);
+                local IsA_60 = v_144.IsA;
+                local Model_60 = v_144:IsA(Model_33);
+                local var693 = (Model_60 and 13633673);
+                local Name_140 = v_144[Name_113];
+                local Name_140_is_string = (Name_140 == "GasCanister");
+            end
+            local var694 = wait(0.1);
+            local Children_145 = workspace:GetChildren();
+            for i_145, v_145 in ipairs(Children_145) do
+                if not not i_145 then return end -- won't run
+                local var694 = (v_145 and 10319888);
+                local var695 = (var694 or 13947447);
+                local IsA_61 = v_145.IsA;
+                local Model_61 = v_145:IsA(Model_33);
+                local var696 = (Model_61 and 13633673);
+                local Name_141 = v_145[Name_113];
+                local Name_141_is_string = (Name_141 == "GasCanister");
+            end
+            local var697 = wait(0.1);
+            local Children_146 = workspace:GetChildren();
+            for i_146, v_146 in ipairs(Children_146) do
+                if not not i_146 then return end -- won't run
+                local var697 = (v_146 and 10319888);
+                local var698 = (var697 or 13947447);
+                local IsA_62 = v_146.IsA;
+                local Model_62 = v_146:IsA(Model_33);
+                local var699 = (Model_62 and 13633673);
+                local Name_142 = v_146[Name_113];
+                local Name_142_is_string = (Name_142 == "GasCanister");
+            end
+            local var700 = wait(0.1);
+            local Children_147 = workspace:GetChildren();
+            for i_147, v_147 in ipairs(Children_147) do
+                if not not i_147 then return end -- won't run
+                local var700 = (v_147 and 10319888);
+                local var701 = (var700 or 13947447);
+                local IsA_63 = v_147.IsA;
+                local Model_63 = v_147:IsA(Model_33);
+                local var702 = (Model_63 and 13633673);
+                local Name_143 = v_147[Name_113];
+                local Name_143_is_string = (Name_143 == "GasCanister");
+            end
+            local var703 = wait(0.1);
+            local Children_148 = workspace:GetChildren();
+            for i_148, v_148 in ipairs(Children_148) do
+                if not not i_148 then return end -- won't run
+                local var703 = (v_148 and 10319888);
+                local var704 = (var703 or 13947447);
+                local IsA_64 = v_148.IsA;
+                local Model_64 = v_148:IsA(Model_33);
+                local var705 = (Model_64 and 13633673);
+                local Name_144 = v_148[Name_113];
+                local Name_144_is_string = (Name_144 == "GasCanister");
+            end
+            local var706 = wait(0.1);
+            local Children_149 = workspace:GetChildren();
+            for i_149, v_149 in ipairs(Children_149) do
+                if not not i_149 then return end -- won't run
+                local var706 = (v_149 and 10319888);
+                local var707 = (var706 or 13947447);
+                local IsA_65 = v_149.IsA;
+                local Model_65 = v_149:IsA(Model_33);
+                local var708 = (Model_65 and 13633673);
+                local Name_145 = v_149[Name_113];
+                local Name_145_is_string = (Name_145 == "GasCanister");
+            end
+            local var709 = wait(0.1);
+            local Children_150 = workspace:GetChildren();
+            for i_150, v_150 in ipairs(Children_150) do
+                if not not i_150 then return end -- won't run
+                local var709 = (v_150 and 10319888);
+                local var710 = (var709 or 13947447);
+                local IsA_66 = v_150.IsA;
+                local Model_66 = v_150:IsA(Model_33);
+                local var711 = (Model_66 and 13633673);
+                local Name_146 = v_150[Name_113];
+                local Name_146_is_string = (Name_146 == "GasCanister");
+            end
+            local var712 = wait(0.1);
+            local Children_151 = workspace:GetChildren();
+            for i_151, v_151 in ipairs(Children_151) do
+            error("C:\\Users\\Administrator\\Downloads\\yetanotherbot\\unveilr\\main:659: too many operations")
+            end
+
+        end);
+    end)
+
+end);
+local Frame_16 = Instance.new("Frame");
+local TextLabel_7 = Instance.new("TextLabel");
+local UIPadding_5 = Instance.new("UIPadding");
+local UICorner_13 = Instance.new("UICorner");
+local UICorner_14 = Instance.new("UICorner");
+local ImageLabel_5 = Instance.new("ImageLabel");
+local TextButton_9 = Instance.new("TextButton");
+local Frame_17 = Instance.new("Frame");
+Frame_16.Name = "大头(第三关)_Toggle";
+Frame_16.Parent = ScrollingFrame_3;
+local AbsoluteContentSize_9 = UIListLayout_3.AbsoluteContentSize;
+local UDim2_Value_63 = UDim2_New(0, 0, 0, 1080);
+ScrollingFrame_3.CanvasSize = UDim2_Value_63;
+local Color3_Value_54 = Color3_FromRGB(40, 42, 60);
+Frame_16.BackgroundColor3 = Color3_Value_54;
+Frame_16.BorderSizePixel = 0;
+local UDim2_Value_64 = UDim2_New(0, 326, 0, 28);
+Frame_16.Size = UDim2_Value_64;
+TextLabel_7.Name = ToggleName;
+TextLabel_7.Parent = Frame_16;
+local Color3_Value_55 = Color3_FromRGB(40, 42, 60);
+TextLabel_7.BackgroundColor3 = Color3_Value_55;
+TextLabel_7.BackgroundTransparency = 1;
+TextLabel_7.BorderSizePixel = 0;
+local UDim2_Value_65 = UDim2_New(0, 278, 0, 28);
+TextLabel_7.Size = UDim2_Value_65;
+local Gotham_10 = Enum_Font.Gotham;
+TextLabel_7.Font = Gotham_10;
+TextLabel_7.Text = "大头(第三关)";
+local Color3_Value_56 = Color3_FromRGB(255, 255, 255);
+TextLabel_7.TextColor3 = Color3_Value_56;
+TextLabel_7.TextSize = 13;
+local Left_5 = Enum_TextXAlignment.Left;
+TextLabel_7.TextXAlignment = Left_5;
+UIPadding_5.Name = "ToggleNamePadding";
+UIPadding_5.Parent = TextLabel_7;
+local UDim_Value_14 = UDim_New(0, 10);
+UIPadding_5.PaddingLeft = UDim_Value_14;
+UICorner_13.Name = "ToggleFrameCorner";
+UICorner_13.Parent = Frame_16;
+Frame_17.Name = "ToggleF";
+Frame_17.Parent = Frame_16;
+local Color3_Value_57 = Color3_FromRGB(55, 55, 75);
+Frame_17.BackgroundColor3 = Color3_Value_57;
+Frame_17.BackgroundTransparency = 0;
+Frame_17.BorderSizePixel = 0;
+local UDim2_Value_66 = UDim2_New(0.867647052, 0, 0.142857149, 0);
+Frame_17.Position = UDim2_Value_66;
+local UDim2_Value_67 = UDim2_New(0, 38, 0, 18);
+Frame_17.Size = UDim2_Value_67;
+local UDim_Value_15 = UDim_New(0, 25);
+UICorner_14.CornerRadius = UDim_Value_15;
+UICorner_14.Name = "ToggleCorner";
+UICorner_14.Parent = Frame_17;
+TextButton_9.Name = "ToggleButton";
+TextButton_9.Parent = Frame_17;
+local Color3_Value_58 = Color3_FromRGB(55, 55, 75);
+TextButton_9.BackgroundColor3 = Color3_Value_58;
+TextButton_9.BackgroundTransparency = 1;
+TextButton_9.BorderSizePixel = 0;
+local UDim2_Value_68 = UDim2_New(0, 45, 0, 23);
+TextButton_9.Size = UDim2_Value_68;
+local SourceSans_5 = Enum_Font.SourceSans;
+TextButton_9.Font = SourceSans_5;
+TextButton_9.Text = "";
+local Color3_Value_59 = Color3_FromRGB(0, 0, 0);
+TextButton_9.TextColor3 = Color3_Value_59;
+TextButton_9.TextSize = 14;
+ImageLabel_5.Name = "ToggleCircle";
+ImageLabel_5.Parent = Frame_17;
+local Color3_Value_60 = Color3_FromRGB(255, 255, 255);
+ImageLabel_5.BackgroundColor3 = Color3_Value_60;
+ImageLabel_5.BackgroundTransparency = 1;
+local UDim2_Value_69 = UDim2_New(0.093, 0, 0.153, 0);
+ImageLabel_5.Position = UDim2_Value_69;
+local UDim2_Value_70 = UDim2_New(0, 14, 0, 14);
+ImageLabel_5.Size = UDim2_Value_70;
+ImageLabel_5.Image = "rbxassetid://3570695787";
+local Slice_5 = Enum_ScaleType.Slice;
+ImageLabel_5.ScaleType = Slice_5;
+local Rect_Value_5 = Rect_New(100, 100, 100, 100);
+ImageLabel_5.SliceCenter = Rect_Value_5;
+ImageLabel_5.SliceScale = 0.12;
+local Connection_20;
+Connection_20 = TextButton_9.MouseButton1Down:Connect(function() -- args: X_11, Y_11;
+    local TweenService_16 = game:GetService("TweenService");
+    local New_17 = TweenInfo.new;
+    local _call264 = New_17(0.3);
+    local Color3_Value_85 = Color3_FromRGB(55, 74, 251);
+    local str_17 = TweenService:Create(Frame_17, _call264, {
+        BackgroundColor3 = Color3_Value_85,
+    });
+    local Play_33 = str_17.Play;
+    local Play_34 = str_17:Play();
+    local TweenService_17 = game:GetService("TweenService");
+    local New_18 = TweenInfo.new;
+    local _call266 = New_18(0.3);
+    local UDim2_Value_90 = UDim2_New(0.559, 0, 0.153, 0);
+    local str_18 = TweenService:Create(ImageLabel_5, _call266, {
+        Position = UDim2_Value_90,
+    });
+    local Play_35 = str_18.Play;
+    local Play_36 = str_18:Play();
+    local Success_66, Error_Message_66 = pcall(function(...)
+        local Spawn_5 = "spawn";
+        local Spawned_5 = task.spawn(function(p1_0, p2_0, p3_0)
+            local Ignore_21 = "ignore";
+            local Ignore_22 = workspace[Ignore_21];
+            local Children_152 = Ignore_22:GetChildren();
+            for i_152, v_152 in ipairs(Children_152) do
+                if not i_152 then return end -- won't run
+                if not v_152 then return end -- won't run
+                local IsA_67 = v_152.IsA;
+                local Model_67 = "Model";
+                local Model_68 = v_152:IsA(Model_67);
+                local var716 = (Model_68 and 16399109);
+                local Name_147 = "Name";
+                local Name_148 = v_152[Name_147];
+                local Name_148_is_string = (Name_148 == "Looky");
+            end
+            local var722 = wait(0.1);
+            local Ignore_23 = workspace[Ignore_21];
+            local Children_153 = Ignore_23:GetChildren();
+            for i_153, v_153 in ipairs(Children_153) do
+                if not i_153 then return end -- won't run
+                if not v_153 then return end -- won't run
+                local IsA_68 = v_153.IsA;
+                local Model_69 = v_153:IsA(Model_67);
+                local var723 = (Model_69 and 16399109);
+                local Name_149 = v_153[Name_147];
+                local Name_149_is_string = (Name_149 == "Looky");
+            end
+            local var725 = wait(0.1);
+            local Ignore_24 = workspace[Ignore_21];
+            local Children_154 = Ignore_24:GetChildren();
+            for i_154, v_154 in ipairs(Children_154) do
+                if not i_154 then return end -- won't run
+                if not v_154 then return end -- won't run
+                local IsA_69 = v_154.IsA;
+                local Model_70 = v_154:IsA(Model_67);
+                local var726 = (Model_70 and 16399109);
+                local Name_150 = v_154[Name_147];
+                local Name_150_is_string = (Name_150 == "Looky");
+            end
+            local var728 = wait(0.1);
+            local Ignore_25 = workspace[Ignore_21];
+            local Children_155 = Ignore_25:GetChildren();
+            for i_155, v_155 in ipairs(Children_155) do
+                if not i_155 then return end -- won't run
+                if not v_155 then return end -- won't run
+                local IsA_70 = v_155.IsA;
+                local Model_71 = v_155:IsA(Model_67);
+                local var729 = (Model_71 and 16399109);
+                local Name_151 = v_155[Name_147];
+                local Name_151_is_string = (Name_151 == "Looky");
+            end
+            local var731 = wait(0.1);
+            local Ignore_26 = workspace[Ignore_21];
+            local Children_156 = Ignore_26:GetChildren();
+            for i_156, v_156 in ipairs(Children_156) do
+                if not i_156 then return end -- won't run
+                if not v_156 then return end -- won't run
+                local IsA_71 = v_156.IsA;
+                local Model_72 = v_156:IsA(Model_67);
+                local var732 = (Model_72 and 16399109);
+                local Name_152 = v_156[Name_147];
+                local Name_152_is_string = (Name_152 == "Looky");
+            end
+            local var734 = wait(0.1);
+            local Ignore_27 = workspace[Ignore_21];
+            local Children_157 = Ignore_27:GetChildren();
+            for i_157, v_157 in ipairs(Children_157) do
+                if not i_157 then return end -- won't run
+                if not v_157 then return end -- won't run
+                local IsA_72 = v_157.IsA;
+                local Model_73 = v_157:IsA(Model_67);
+                local var735 = (Model_73 and 16399109);
+                local Name_153 = v_157[Name_147];
+                local Name_153_is_string = (Name_153 == "Looky");
+            end
+            local var737 = wait(0.1);
+            local Ignore_28 = workspace[Ignore_21];
+            local Children_158 = Ignore_28:GetChildren();
+            for i_158, v_158 in ipairs(Children_158) do
+                if not i_158 then return end -- won't run
+                if not v_158 then return end -- won't run
+                local IsA_73 = v_158.IsA;
+                local Model_74 = v_158:IsA(Model_67);
+                local var738 = (Model_74 and 16399109);
+                local Name_154 = v_158[Name_147];
+                local Name_154_is_string = (Name_154 == "Looky");
+            end
+            local var740 = wait(0.1);
+            local Ignore_29 = workspace[Ignore_21];
+            local Children_159 = Ignore_29:GetChildren();
+            for i_159, v_159 in ipairs(Children_159) do
+                if not i_159 then return end -- won't run
+                if not v_159 then return end -- won't run
+                local IsA_74 = v_159.IsA;
+                local Model_75 = v_159:IsA(Model_67);
+                local var741 = (Model_75 and 16399109);
+                local Name_155 = v_159[Name_147];
+                local Name_155_is_string = (Name_155 == "Looky");
+            end
+            local var743 = wait(0.1);
+            local Ignore_30 = workspace[Ignore_21];
+            local Children_160 = Ignore_30:GetChildren();
+            for i_160, v_160 in ipairs(Children_160) do
+                if not i_160 then return end -- won't run
+                if not v_160 then return end -- won't run
+                local IsA_75 = v_160.IsA;
+                local Model_76 = v_160:IsA(Model_67);
+                local var744 = (Model_76 and 16399109);
+                local Name_156 = v_160[Name_147];
+                local Name_156_is_string = (Name_156 == "Looky");
+            end
+            local var746 = wait(0.1);
+            local Ignore_31 = workspace[Ignore_21];
+            local Children_161 = Ignore_31:GetChildren();
+            for i_161, v_161 in ipairs(Children_161) do
+                if not i_161 then return end -- won't run
+                if not v_161 then return end -- won't run
+                local IsA_76 = v_161.IsA;
+                local Model_77 = v_161:IsA(Model_67);
+                local var747 = (Model_77 and 16399109);
+                local Name_157 = v_161[Name_147];
+                local Name_157_is_string = (Name_157 == "Looky");
+            end
+            local var749 = wait(0.1);
+            local Ignore_32 = workspace[Ignore_21];
+            local Children_162 = Ignore_32:GetChildren();
+            for i_162, v_162 in ipairs(Children_162) do
+                if not i_162 then return end -- won't run
+                if not v_162 then return end -- won't run
+                local IsA_77 = v_162.IsA;
+                local Model_78 = v_162:IsA(Model_67);
+                local var750 = (Model_78 and 16399109);
+                local Name_158 = v_162[Name_147];
+                local Name_158_is_string = (Name_158 == "Looky");
+            end
+            local var752 = wait(0.1);
+            local Ignore_33 = workspace[Ignore_21];
+            local Children_163 = Ignore_33:GetChildren();
+            for i_163, v_163 in ipairs(Children_163) do
+                if not i_163 then return end -- won't run
+                if not v_163 then return end -- won't run
+                local IsA_78 = v_163.IsA;
+                local Model_79 = v_163:IsA(Model_67);
+                local var753 = (Model_79 and 16399109);
+                local Name_159 = v_163[Name_147];
+                local Name_159_is_string = (Name_159 == "Looky");
+            end
+            local var755 = wait(0.1);
+            local Ignore_34 = workspace[Ignore_21];
+            local Children_164 = Ignore_34:GetChildren();
+            for i_164, v_164 in ipairs(Children_164) do
+                if not i_164 then return end -- won't run
+                if not v_164 then return end -- won't run
+                local IsA_79 = v_164.IsA;
+                local Model_80 = v_164:IsA(Model_67);
+                local var756 = (Model_80 and 16399109);
+                local Name_160 = v_164[Name_147];
+                local Name_160_is_string = (Name_160 == "Looky");
+            end
+            local var758 = wait(0.1);
+            local Ignore_35 = workspace[Ignore_21];
+            local Children_165 = Ignore_35:GetChildren();
+            for i_165, v_165 in ipairs(Children_165) do
+                if not i_165 then return end -- won't run
+                if not v_165 then return end -- won't run
+                local IsA_80 = v_165.IsA;
+                local Model_81 = v_165:IsA(Model_67);
+                local var759 = (Model_81 and 16399109);
+                local Name_161 = v_165[Name_147];
+                local Name_161_is_string = (Name_161 == "Looky");
+            end
+            local var761 = wait(0.1);
+            local Ignore_36 = workspace[Ignore_21];
+            local Children_166 = Ignore_36:GetChildren();
+            for i_166, v_166 in ipairs(Children_166) do
+                if not i_166 then return end -- won't run
+                if not v_166 then return end -- won't run
+                local IsA_81 = v_166.IsA;
+                local Model_82 = v_166:IsA(Model_67);
+                local var762 = (Model_82 and 16399109);
+                local Name_162 = v_166[Name_147];
+                local Name_162_is_string = (Name_162 == "Looky");
+            end
+            local var764 = wait(0.1);
+            local Ignore_37 = workspace[Ignore_21];
+            local Children_167 = Ignore_37:GetChildren();
+            for i_167, v_167 in ipairs(Children_167) do
+                if not i_167 then return end -- won't run
+                if not v_167 then return end -- won't run
+                local IsA_82 = v_167.IsA;
+                local Model_83 = v_167:IsA(Model_67);
+                local var765 = (Model_83 and 16399109);
+                local Name_163 = v_167[Name_147];
+                local Name_163_is_string = (Name_163 == "Looky");
+            end
+            local var767 = wait(0.1);
+            local Ignore_38 = workspace[Ignore_21];
+            local Children_168 = Ignore_38:GetChildren();
+            for i_168, v_168 in ipairs(Children_168) do
+                if not i_168 then return end -- won't run
+                if not v_168 then return end -- won't run
+                local IsA_83 = v_168.IsA;
+                local Model_84 = v_168:IsA(Model_67);
+                local var768 = (Model_84 and 16399109);
+                local Name_164 = v_168[Name_147];
+                local Name_164_is_string = (Name_164 == "Looky");
+            end
+            local var770 = wait(0.1);
+            local Ignore_39 = workspace[Ignore_21];
+            local Children_169 = Ignore_39:GetChildren();
+            for i_169, v_169 in ipairs(Children_169) do
+                if not i_169 then return end -- won't run
+                if not v_169 then return end -- won't run
+                local IsA_84 = v_169.IsA;
+                local Model_85 = v_169:IsA(Model_67);
+                local var771 = (Model_85 and 16399109);
+                local Name_165 = v_169[Name_147];
+                local Name_165_is_string = (Name_165 == "Looky");
+            end
+            local var773 = wait(0.1);
+            local Ignore_40 = workspace[Ignore_21];
+            local Children_170 = Ignore_40:GetChildren();
+            for i_170, v_170 in ipairs(Children_170) do
+                if not i_170 then return end -- won't run
+                if not v_170 then return end -- won't run
+                local IsA_85 = v_170.IsA;
+                local Model_86 = v_170:IsA(Model_67);
+                local var774 = (Model_86 and 16399109);
+                local Name_166 = v_170[Name_147];
+                local Name_166_is_string = (Name_166 == "Looky");
+            end
+            local var776 = wait(0.1);
+            local Ignore_41 = workspace[Ignore_21];
+            local Children_171 = Ignore_41:GetChildren();
+            for i_171, v_171 in ipairs(Children_171) do
+                if not i_171 then return end -- won't run
+                if not v_171 then return end -- won't run
+                local IsA_86 = v_171.IsA;
+                local Model_87 = v_171:IsA(Model_67);
+                local var777 = (Model_87 and 16399109);
+                local Name_167 = v_171[Name_147];
+                local Name_167_is_string = (Name_167 == "Looky");
+            end
+            local var779 = wait(0.1);
+            local Ignore_42 = workspace[Ignore_21];
+            local Children_172 = Ignore_42:GetChildren();
+            for i_172, v_172 in ipairs(Children_172) do
+                if not i_172 then return end -- won't run
+                if not v_172 then return end -- won't run
+                local IsA_87 = v_172.IsA;
+                local Model_88 = v_172:IsA(Model_67);
+                local var780 = (Model_88 and 16399109);
+                local Name_168 = v_172[Name_147];
+                local Name_168_is_string = (Name_168 == "Looky");
+            end
+            local var782 = wait(0.1);
+            local Ignore_43 = workspace[Ignore_21];
+            local Children_173 = Ignore_43:GetChildren();
+            for i_173, v_173 in ipairs(Children_173) do
+                if not i_173 then return end -- won't run
+                if not v_173 then return end -- won't run
+                local IsA_88 = v_173.IsA;
+                local Model_89 = v_173:IsA(Model_67);
+                local var783 = (Model_89 and 16399109);
+                local Name_169 = v_173[Name_147];
+                local Name_169_is_string = (Name_169 == "Looky");
+            end
+            local var785 = wait(0.1);
+            local Ignore_44 = workspace[Ignore_21];
+            local Children_174 = Ignore_44:GetChildren();
+            for i_174, v_174 in ipairs(Children_174) do
+                if not i_174 then return end -- won't run
+                if not v_174 then return end -- won't run
+                local IsA_89 = v_174.IsA;
+                local Model_90 = v_174:IsA(Model_67);
+                local var786 = (Model_90 and 16399109);
+                local Name_170 = v_174[Name_147];
+                local Name_170_is_string = (Name_170 == "Looky");
+            end
+            local var788 = wait(0.1);
+            local Ignore_45 = workspace[Ignore_21];
+            local Children_175 = Ignore_45:GetChildren();
+            for i_175, v_175 in ipairs(Children_175) do
+                if not i_175 then return end -- won't run
+                if not v_175 then return end -- won't run
+                local IsA_90 = v_175.IsA;
+                local Model_91 = v_175:IsA(Model_67);
+                local var789 = (Model_91 and 16399109);
+                local Name_171 = v_175[Name_147];
+                local Name_171_is_string = (Name_171 == "Looky");
+            end
+            local var791 = wait(0.1);
+            local Ignore_46 = workspace[Ignore_21];
+            local Children_176 = Ignore_46:GetChildren();
+            for i_176, v_176 in ipairs(Children_176) do
+                if not i_176 then return end -- won't run
+                if not v_176 then return end -- won't run
+                local IsA_91 = v_176.IsA;
+                local Model_92 = v_176:IsA(Model_67);
+                local var792 = (Model_92 and 16399109);
+                local Name_172 = v_176[Name_147];
+                local Name_172_is_string = (Name_172 == "Looky");
+            end
+            local var794 = wait(0.1);
+            local Ignore_47 = workspace[Ignore_21];
+            local Children_177 = Ignore_47:GetChildren();
+            for i_177, v_177 in ipairs(Children_177) do
+                if not i_177 then return end -- won't run
+                if not v_177 then return end -- won't run
+                local IsA_92 = v_177.IsA;
+                local Model_93 = v_177:IsA(Model_67);
+                local var795 = (Model_93 and 16399109);
+                local Name_173 = v_177[Name_147];
+                local Name_173_is_string = (Name_173 == "Looky");
+            end
+            local var797 = wait(0.1);
+            local Ignore_48 = workspace[Ignore_21];
+            local Children_178 = Ignore_48:GetChildren();
+            for i_178, v_178 in ipairs(Children_178) do
+                if not i_178 then return end -- won't run
+                if not v_178 then return end -- won't run
+                local IsA_93 = v_178.IsA;
+                local Model_94 = v_178:IsA(Model_67);
+                local var798 = (Model_94 and 16399109);
+                local Name_174 = v_178[Name_147];
+                local Name_174_is_string = (Name_174 == "Looky");
+            end
+            local var800 = wait(0.1);
+            local Ignore_49 = workspace[Ignore_21];
+            local Children_179 = Ignore_49:GetChildren();
+            for i_179, v_179 in ipairs(Children_179) do
+                if not i_179 then return end -- won't run
+                if not v_179 then return end -- won't run
+                local IsA_94 = v_179.IsA;
+                local Model_95 = v_179:IsA(Model_67);
+                local var801 = (Model_95 and 16399109);
+                local Name_175 = v_179[Name_147];
+                local Name_175_is_string = (Name_175 == "Looky");
+            end
+            local var803 = wait(0.1);
+            local Ignore_50 = workspace[Ignore_21];
+            local Children_180 = Ignore_50:GetChildren();
+            for i_180, v_180 in ipairs(Children_180) do
+                if not i_180 then return end -- won't run
+                if not v_180 then return end -- won't run
+                local IsA_95 = v_180.IsA;
+                local Model_96 = v_180:IsA(Model_67);
+                local var804 = (Model_96 and 16399109);
+                local Name_176 = v_180[Name_147];
+                local Name_176_is_string = (Name_176 == "Looky");
+            end
+            local var806 = wait(0.1);
+            local Ignore_51 = workspace[Ignore_21];
+            local Children_181 = Ignore_51:GetChildren();
+            for i_181, v_181 in ipairs(Children_181) do
+                if not i_181 then return end -- won't run
+                if not v_181 then return end -- won't run
+                local IsA_96 = v_181.IsA;
+                local Model_97 = v_181:IsA(Model_67);
+                local var807 = (Model_97 and 16399109);
+                local Name_177 = v_181[Name_147];
+                local Name_177_is_string = (Name_177 == "Looky");
+            end
+            local var809 = wait(0.1);
+            local Ignore_52 = workspace[Ignore_21];
+            local Children_182 = Ignore_52:GetChildren();
+            for i_182, v_182 in ipairs(Children_182) do
+                if not i_182 then return end -- won't run
+                if not v_182 then return end -- won't run
+                local IsA_97 = v_182.IsA;
+                local Model_98 = v_182:IsA(Model_67);
+                local var810 = (Model_98 and 16399109);
+                local Name_178 = v_182[Name_147];
+                local Name_178_is_string = (Name_178 == "Looky");
+            end
+            local var812 = wait(0.1);
+            local Ignore_53 = workspace[Ignore_21];
+            local Children_183 = Ignore_53:GetChildren();
+            for i_183, v_183 in ipairs(Children_183) do
+                if not i_183 then return end -- won't run
+                if not v_183 then return end -- won't run
+                local IsA_98 = v_183.IsA;
+                local Model_99 = v_183:IsA(Model_67);
+                local var813 = (Model_99 and 16399109);
+                local Name_179 = v_183[Name_147];
+                local Name_179_is_string = (Name_179 == "Looky");
+            end
+            local var815 = wait(0.1);
+            local Ignore_54 = workspace[Ignore_21];
+            local Children_184 = Ignore_54:GetChildren();
+            for i_184, v_184 in ipairs(Children_184) do
+                if not i_184 then return end -- won't run
+                if not v_184 then return end -- won't run
+                local IsA_99 = v_184.IsA;
+                local Model_100 = v_184:IsA(Model_67);
+                local var816 = (Model_100 and 16399109);
+                local Name_180 = v_184[Name_147];
+                local Name_180_is_string = (Name_180 == "Looky");
+            end
+            local var818 = wait(0.1);
+            local Ignore_55 = workspace[Ignore_21];
+            local Children_185 = Ignore_55:GetChildren();
+            for i_185, v_185 in ipairs(Children_185) do
+                if not i_185 then return end -- won't run
+                if not v_185 then return end -- won't run
+                local IsA_100 = v_185.IsA;
+                local Model_101 = v_185:IsA(Model_67);
+                local var819 = (Model_101 and 16399109);
+                local Name_181 = v_185[Name_147];
+                local Name_181_is_string = (Name_181 == "Looky");
+            end
+            local var821 = wait(0.1);
+            local Ignore_56 = workspace[Ignore_21];
+            local Children_186 = Ignore_56:GetChildren();
+            for i_186, v_186 in ipairs(Children_186) do
+                if not i_186 then return end -- won't run
+                if not v_186 then return end -- won't run
+                local IsA_101 = v_186.IsA;
+                local Model_102 = v_186:IsA(Model_67);
+                local var822 = (Model_102 and 16399109);
+                local Name_182 = v_186[Name_147];
+                local Name_182_is_string = (Name_182 == "Looky");
+            end
+            local var824 = wait(0.1);
+            local Ignore_57 = workspace[Ignore_21];
+            local Children_187 = Ignore_57:GetChildren();
+            for i_187, v_187 in ipairs(Children_187) do
+                if not i_187 then return end -- won't run
+                if not v_187 then return end -- won't run
+                local IsA_102 = v_187.IsA;
+                local Model_103 = v_187:IsA(Model_67);
+                local var825 = (Model_103 and 16399109);
+            error("C:\\Users\\Administrator\\Downloads\\yetanotherbot\\unveilr\\main:659: too many operations")
+            end
+
+        end);
+    end)
+
+end);
+local Frame_18 = Instance.new("Frame");
+local TextLabel_8 = Instance.new("TextLabel");
+local UIPadding_6 = Instance.new("UIPadding");
+local UICorner_15 = Instance.new("UICorner");
+local UICorner_16 = Instance.new("UICorner");
+local ImageLabel_6 = Instance.new("ImageLabel");
+local TextButton_10 = Instance.new("TextButton");
+local Frame_19 = Instance.new("Frame");
+Frame_18.Name = "蛋糕(第四关)_Toggle";
+Frame_18.Parent = ScrollingFrame_3;
+local AbsoluteContentSize_10 = UIListLayout_3.AbsoluteContentSize;
+local UDim2_Value_71 = UDim2_New(0, 0, 0, 1080);
+ScrollingFrame_3.CanvasSize = UDim2_Value_71;
+local Color3_Value_61 = Color3_FromRGB(40, 42, 60);
+Frame_18.BackgroundColor3 = Color3_Value_61;
+Frame_18.BorderSizePixel = 0;
+local UDim2_Value_72 = UDim2_New(0, 326, 0, 28);
+Frame_18.Size = UDim2_Value_72;
+TextLabel_8.Name = ToggleName;
+TextLabel_8.Parent = Frame_18;
+local Color3_Value_62 = Color3_FromRGB(40, 42, 60);
+TextLabel_8.BackgroundColor3 = Color3_Value_62;
+TextLabel_8.BackgroundTransparency = 1;
+TextLabel_8.BorderSizePixel = 0;
+local UDim2_Value_73 = UDim2_New(0, 278, 0, 28);
+TextLabel_8.Size = UDim2_Value_73;
+local Gotham_11 = Enum_Font.Gotham;
+TextLabel_8.Font = Gotham_11;
+TextLabel_8.Text = "蛋糕(第四关)";
+local Color3_Value_63 = Color3_FromRGB(255, 255, 255);
+TextLabel_8.TextColor3 = Color3_Value_63;
+TextLabel_8.TextSize = 13;
+local Left_6 = Enum_TextXAlignment.Left;
+TextLabel_8.TextXAlignment = Left_6;
+UIPadding_6.Name = "ToggleNamePadding";
+UIPadding_6.Parent = TextLabel_8;
+local UDim_Value_16 = UDim_New(0, 10);
+UIPadding_6.PaddingLeft = UDim_Value_16;
+UICorner_15.Name = "ToggleFrameCorner";
+UICorner_15.Parent = Frame_18;
+Frame_19.Name = "ToggleF";
+Frame_19.Parent = Frame_18;
+local Color3_Value_64 = Color3_FromRGB(55, 55, 75);
+Frame_19.BackgroundColor3 = Color3_Value_64;
+Frame_19.BackgroundTransparency = 0;
+Frame_19.BorderSizePixel = 0;
+local UDim2_Value_74 = UDim2_New(0.867647052, 0, 0.142857149, 0);
+Frame_19.Position = UDim2_Value_74;
+local UDim2_Value_75 = UDim2_New(0, 38, 0, 18);
+Frame_19.Size = UDim2_Value_75;
+local UDim_Value_17 = UDim_New(0, 25);
+UICorner_16.CornerRadius = UDim_Value_17;
+UICorner_16.Name = "ToggleCorner";
+UICorner_16.Parent = Frame_19;
+TextButton_10.Name = "ToggleButton";
+TextButton_10.Parent = Frame_19;
+local Color3_Value_65 = Color3_FromRGB(55, 55, 75);
+TextButton_10.BackgroundColor3 = Color3_Value_65;
+TextButton_10.BackgroundTransparency = 1;
+TextButton_10.BorderSizePixel = 0;
+local UDim2_Value_76 = UDim2_New(0, 45, 0, 23);
+TextButton_10.Size = UDim2_Value_76;
+local SourceSans_6 = Enum_Font.SourceSans;
+TextButton_10.Font = SourceSans_6;
+TextButton_10.Text = "";
+local Color3_Value_66 = Color3_FromRGB(0, 0, 0);
+TextButton_10.TextColor3 = Color3_Value_66;
+TextButton_10.TextSize = 14;
+ImageLabel_6.Name = "ToggleCircle";
+ImageLabel_6.Parent = Frame_19;
+local Color3_Value_67 = Color3_FromRGB(255, 255, 255);
+ImageLabel_6.BackgroundColor3 = Color3_Value_67;
+ImageLabel_6.BackgroundTransparency = 1;
+local UDim2_Value_77 = UDim2_New(0.093, 0, 0.153, 0);
+ImageLabel_6.Position = UDim2_Value_77;
+local UDim2_Value_78 = UDim2_New(0, 14, 0, 14);
+ImageLabel_6.Size = UDim2_Value_78;
+ImageLabel_6.Image = "rbxassetid://3570695787";
+local Slice_6 = Enum_ScaleType.Slice;
+ImageLabel_6.ScaleType = Slice_6;
+local Rect_Value_6 = Rect_New(100, 100, 100, 100);
+ImageLabel_6.SliceCenter = Rect_Value_6;
+ImageLabel_6.SliceScale = 0.12;
+local Connection_21;
+Connection_21 = TextButton_10.MouseButton1Down:Connect(function() -- args: X_12, Y_12;
+    local TweenService_18 = game:GetService("TweenService");
+    local New_19 = TweenInfo.new;
+    local _call271 = New_19(0.3);
+    local Color3_Value_86 = Color3_FromRGB(55, 74, 251);
+    local str_19 = TweenService:Create(Frame_19, _call271, {
+        BackgroundColor3 = Color3_Value_86,
+    });
+    local Play_37 = str_19.Play;
+    local Play_38 = str_19:Play();
+    local TweenService_19 = game:GetService("TweenService");
+    local New_20 = TweenInfo.new;
+    local _call273 = New_20(0.3);
+    local UDim2_Value_91 = UDim2_New(0.559, 0, 0.153, 0);
+    local str_20 = TweenService:Create(ImageLabel_6, _call273, {
+        Position = UDim2_Value_91,
+    });
+    local Play_39 = str_20.Play;
+    local Play_40 = str_20:Play();
+    local Success_67, Error_Message_67 = pcall(function(...)
+        local Spawn_6 = "spawn";
+        local Spawned_6 = task.spawn(function()
+            local Children_188 = workspace:GetChildren();
+            for i_188, v_188 in ipairs(Children_188) do
+                if not not i_188 then return end -- won't run
+                if not not v_188 then return end -- won't run
+                local Model_104 = "Model";
+                local IsA_103 = v_188.IsA;
+                local Model_105 = v_188:IsA(Model_104);
+                if not Model_105 then return end -- won't run
+                local Name_183 = "Name";
+                local Name_184 = v_188[Name_183];
+                local Name_184_is_string = (Name_184 == "CakeMix");
+                local var830 = (Name_184_is_string and 14882656);
+            end
+            local var831 = wait(0.1);
+            local Children_189 = workspace:GetChildren();
+            for i_189, v_189 in ipairs(Children_189) do
+                if not not i_189 then return end -- won't run
+                if not not v_189 then return end -- won't run
+                local IsA_104 = v_189.IsA;
+                local Model_106 = v_189:IsA(Model_104);
+                if not Model_106 then return end -- won't run
+                local Name_185 = v_189[Name_183];
+                local Name_185_is_string = (Name_185 == "CakeMix");
+                local var831 = (Name_185_is_string and 14882656);
+            end
+            local var832 = wait(0.1);
+            local Children_190 = workspace:GetChildren();
+            for i_190, v_190 in ipairs(Children_190) do
+                if not not i_190 then return end -- won't run
+                if not not v_190 then return end -- won't run
+                local IsA_105 = v_190.IsA;
+                local Model_107 = v_190:IsA(Model_104);
+                if not Model_107 then return end -- won't run
+                local Name_186 = v_190[Name_183];
+                local Name_186_is_string = (Name_186 == "CakeMix");
+                local var832 = (Name_186_is_string and 14882656);
+            end
+            local var833 = wait(0.1);
+            local Children_191 = workspace:GetChildren();
+            for i_191, v_191 in ipairs(Children_191) do
+                if not not i_191 then return end -- won't run
+                if not not v_191 then return end -- won't run
+                local IsA_106 = v_191.IsA;
+                local Model_108 = v_191:IsA(Model_104);
+                if not Model_108 then return end -- won't run
+                local Name_187 = v_191[Name_183];
+                local Name_187_is_string = (Name_187 == "CakeMix");
+                local var833 = (Name_187_is_string and 14882656);
+            end
+            local var834 = wait(0.1);
+            local Children_192 = workspace:GetChildren();
+            for i_192, v_192 in ipairs(Children_192) do
+                if not not i_192 then return end -- won't run
+                if not not v_192 then return end -- won't run
+                local IsA_107 = v_192.IsA;
+                local Model_109 = v_192:IsA(Model_104);
+                if not Model_109 then return end -- won't run
+                local Name_188 = v_192[Name_183];
+                local Name_188_is_string = (Name_188 == "CakeMix");
+                local var834 = (Name_188_is_string and 14882656);
+            end
+            local var835 = wait(0.1);
+            local Children_193 = workspace:GetChildren();
+            for i_193, v_193 in ipairs(Children_193) do
+                if not not i_193 then return end -- won't run
+                if not not v_193 then return end -- won't run
+                local IsA_108 = v_193.IsA;
+                local Model_110 = v_193:IsA(Model_104);
+                if not Model_110 then return end -- won't run
+                local Name_189 = v_193[Name_183];
+                local Name_189_is_string = (Name_189 == "CakeMix");
+                local var835 = (Name_189_is_string and 14882656);
+            end
+            local var836 = wait(0.1);
+            local Children_194 = workspace:GetChildren();
+            for i_194, v_194 in ipairs(Children_194) do
+                if not not i_194 then return end -- won't run
+                if not not v_194 then return end -- won't run
+                local IsA_109 = v_194.IsA;
+                local Model_111 = v_194:IsA(Model_104);
+                if not Model_111 then return end -- won't run
+                local Name_190 = v_194[Name_183];
+                local Name_190_is_string = (Name_190 == "CakeMix");
+                local var836 = (Name_190_is_string and 14882656);
+            end
+            local var837 = wait(0.1);
+            local Children_195 = workspace:GetChildren();
+            for i_195, v_195 in ipairs(Children_195) do
+                if not not i_195 then return end -- won't run
+                if not not v_195 then return end -- won't run
+                local IsA_110 = v_195.IsA;
+                local Model_112 = v_195:IsA(Model_104);
+                if not Model_112 then return end -- won't run
+                local Name_191 = v_195[Name_183];
+                local Name_191_is_string = (Name_191 == "CakeMix");
+                local var837 = (Name_191_is_string and 14882656);
+            end
+            local var838 = wait(0.1);
+            local Children_196 = workspace:GetChildren();
+            for i_196, v_196 in ipairs(Children_196) do
+                if not not i_196 then return end -- won't run
+                if not not v_196 then return end -- won't run
+                local IsA_111 = v_196.IsA;
+                local Model_113 = v_196:IsA(Model_104);
+                if not Model_113 then return end -- won't run
+                local Name_192 = v_196[Name_183];
+                local Name_192_is_string = (Name_192 == "CakeMix");
+                local var838 = (Name_192_is_string and 14882656);
+            end
+            local var839 = wait(0.1);
+            local Children_197 = workspace:GetChildren();
+            for i_197, v_197 in ipairs(Children_197) do
+                if not not i_197 then return end -- won't run
+                if not not v_197 then return end -- won't run
+                local IsA_112 = v_197.IsA;
+                local Model_114 = v_197:IsA(Model_104);
+                if not Model_114 then return end -- won't run
+                local Name_193 = v_197[Name_183];
+                local Name_193_is_string = (Name_193 == "CakeMix");
+                local var839 = (Name_193_is_string and 14882656);
+            end
+            local var840 = wait(0.1);
+            local Children_198 = workspace:GetChildren();
+            for i_198, v_198 in ipairs(Children_198) do
+                if not not i_198 then return end -- won't run
+                if not not v_198 then return end -- won't run
+                local IsA_113 = v_198.IsA;
+                local Model_115 = v_198:IsA(Model_104);
+                if not Model_115 then return end -- won't run
+                local Name_194 = v_198[Name_183];
+                local Name_194_is_string = (Name_194 == "CakeMix");
+                local var840 = (Name_194_is_string and 14882656);
+            end
+            local var841 = wait(0.1);
+            local Children_199 = workspace:GetChildren();
+            for i_199, v_199 in ipairs(Children_199) do
+                if not not i_199 then return end -- won't run
+                if not not v_199 then return end -- won't run
+                local IsA_114 = v_199.IsA;
+                local Model_116 = v_199:IsA(Model_104);
+                if not Model_116 then return end -- won't run
+                local Name_195 = v_199[Name_183];
+                local Name_195_is_string = (Name_195 == "CakeMix");
+                local var841 = (Name_195_is_string and 14882656);
+            end
+            local var842 = wait(0.1);
+            local Children_200 = workspace:GetChildren();
+            for i_200, v_200 in ipairs(Children_200) do
+                if not not i_200 then return end -- won't run
+                if not not v_200 then return end -- won't run
+                local IsA_115 = v_200.IsA;
+                local Model_117 = v_200:IsA(Model_104);
+                if not Model_117 then return end -- won't run
+                local Name_196 = v_200[Name_183];
+                local Name_196_is_string = (Name_196 == "CakeMix");
+                local var842 = (Name_196_is_string and 14882656);
+            end
+            local var843 = wait(0.1);
+            local Children_201 = workspace:GetChildren();
+            for i_201, v_201 in ipairs(Children_201) do
+                if not not i_201 then return end -- won't run
+                if not not v_201 then return end -- won't run
+                local IsA_116 = v_201.IsA;
+                local Model_118 = v_201:IsA(Model_104);
+                if not Model_118 then return end -- won't run
+                local Name_197 = v_201[Name_183];
+                local Name_197_is_string = (Name_197 == "CakeMix");
+                local var843 = (Name_197_is_string and 14882656);
+            end
+            local var844 = wait(0.1);
+            local Children_202 = workspace:GetChildren();
+            for i_202, v_202 in ipairs(Children_202) do
+                if not not i_202 then return end -- won't run
+                if not not v_202 then return end -- won't run
+                local IsA_117 = v_202.IsA;
+                local Model_119 = v_202:IsA(Model_104);
+                if not Model_119 then return end -- won't run
+                local Name_198 = v_202[Name_183];
+                local Name_198_is_string = (Name_198 == "CakeMix");
+                local var844 = (Name_198_is_string and 14882656);
+            end
+            local var845 = wait(0.1);
+            local Children_203 = workspace:GetChildren();
+            for i_203, v_203 in ipairs(Children_203) do
+                if not not i_203 then return end -- won't run
+                if not not v_203 then return end -- won't run
+                local IsA_118 = v_203.IsA;
+                local Model_120 = v_203:IsA(Model_104);
+                if not Model_120 then return end -- won't run
+                local Name_199 = v_203[Name_183];
+                local Name_199_is_string = (Name_199 == "CakeMix");
+                local var845 = (Name_199_is_string and 14882656);
+            end
+            local var846 = wait(0.1);
+            local Children_204 = workspace:GetChildren();
+            for i_204, v_204 in ipairs(Children_204) do
+                if not not i_204 then return end -- won't run
+                if not not v_204 then return end -- won't run
+                local IsA_119 = v_204.IsA;
+                local Model_121 = v_204:IsA(Model_104);
+                if not Model_121 then return end -- won't run
+                local Name_200 = v_204[Name_183];
+                local Name_200_is_string = (Name_200 == "CakeMix");
+                local var846 = (Name_200_is_string and 14882656);
+            end
+            local var847 = wait(0.1);
+            local Children_205 = workspace:GetChildren();
+            for i_205, v_205 in ipairs(Children_205) do
+                if not not i_205 then return end -- won't run
+                if not not v_205 then return end -- won't run
+                local IsA_120 = v_205.IsA;
+                local Model_122 = v_205:IsA(Model_104);
+                if not Model_122 then return end -- won't run
+                local Name_201 = v_205[Name_183];
+                local Name_201_is_string = (Name_201 == "CakeMix");
+                local var847 = (Name_201_is_string and 14882656);
+            end
+            local var848 = wait(0.1);
+            local Children_206 = workspace:GetChildren();
+            for i_206, v_206 in ipairs(Children_206) do
+                if not not i_206 then return end -- won't run
+                if not not v_206 then return end -- won't run
+                local IsA_121 = v_206.IsA;
+                local Model_123 = v_206:IsA(Model_104);
+                if not Model_123 then return end -- won't run
+                local Name_202 = v_206[Name_183];
+                local Name_202_is_string = (Name_202 == "CakeMix");
+                local var848 = (Name_202_is_string and 14882656);
+            end
+            local var849 = wait(0.1);
+            local Children_207 = workspace:GetChildren();
+            for i_207, v_207 in ipairs(Children_207) do
+                if not not i_207 then return end -- won't run
+                if not not v_207 then return end -- won't run
+                local IsA_122 = v_207.IsA;
+                local Model_124 = v_207:IsA(Model_104);
+                if not Model_124 then return end -- won't run
+                local Name_203 = v_207[Name_183];
+                local Name_203_is_string = (Name_203 == "CakeMix");
+                local var849 = (Name_203_is_string and 14882656);
+            end
+            local var850 = wait(0.1);
+            local Children_208 = workspace:GetChildren();
+            for i_208, v_208 in ipairs(Children_208) do
+                if not not i_208 then return end -- won't run
+                if not not v_208 then return end -- won't run
+                local IsA_123 = v_208.IsA;
+                local Model_125 = v_208:IsA(Model_104);
+                if not Model_125 then return end -- won't run
+                local Name_204 = v_208[Name_183];
+                local Name_204_is_string = (Name_204 == "CakeMix");
+                local var850 = (Name_204_is_string and 14882656);
+            end
+            local var851 = wait(0.1);
+            local Children_209 = workspace:GetChildren();
+            for i_209, v_209 in ipairs(Children_209) do
+                if not not i_209 then return end -- won't run
+                if not not v_209 then return end -- won't run
+                local IsA_124 = v_209.IsA;
+                local Model_126 = v_209:IsA(Model_104);
+                if not Model_126 then return end -- won't run
+                local Name_205 = v_209[Name_183];
+                local Name_205_is_string = (Name_205 == "CakeMix");
+                local var851 = (Name_205_is_string and 14882656);
+            end
+            local var852 = wait(0.1);
+            local Children_210 = workspace:GetChildren();
+            for i_210, v_210 in ipairs(Children_210) do
+                if not not i_210 then return end -- won't run
+                if not not v_210 then return end -- won't run
+                local IsA_125 = v_210.IsA;
+                local Model_127 = v_210:IsA(Model_104);
+                if not Model_127 then return end -- won't run
+                local Name_206 = v_210[Name_183];
+                local Name_206_is_string = (Name_206 == "CakeMix");
+                local var852 = (Name_206_is_string and 14882656);
+            end
+            local var853 = wait(0.1);
+            local Children_211 = workspace:GetChildren();
+            for i_211, v_211 in ipairs(Children_211) do
+                if not not i_211 then return end -- won't run
+                if not not v_211 then return end -- won't run
+                local IsA_126 = v_211.IsA;
+                local Model_128 = v_211:IsA(Model_104);
+                if not Model_128 then return end -- won't run
+                local Name_207 = v_211[Name_183];
+                local Name_207_is_string = (Name_207 == "CakeMix");
+                local var853 = (Name_207_is_string and 14882656);
+            end
+            local var854 = wait(0.1);
+            local Children_212 = workspace:GetChildren();
+            for i_212, v_212 in ipairs(Children_212) do
+                if not not i_212 then return end -- won't run
+                if not not v_212 then return end -- won't run
+                local IsA_127 = v_212.IsA;
+                local Model_129 = v_212:IsA(Model_104);
+                if not Model_129 then return end -- won't run
+                local Name_208 = v_212[Name_183];
+                local Name_208_is_string = (Name_208 == "CakeMix");
+                local var854 = (Name_208_is_string and 14882656);
+            end
+            local var855 = wait(0.1);
+            local Children_213 = workspace:GetChildren();
+            for i_213, v_213 in ipairs(Children_213) do
+                if not not i_213 then return end -- won't run
+                if not not v_213 then return end -- won't run
+                local IsA_128 = v_213.IsA;
+                local Model_130 = v_213:IsA(Model_104);
+                if not Model_130 then return end -- won't run
+                local Name_209 = v_213[Name_183];
+                local Name_209_is_string = (Name_209 == "CakeMix");
+                local var855 = (Name_209_is_string and 14882656);
+            end
+            local var856 = wait(0.1);
+            local Children_214 = workspace:GetChildren();
+            for i_214, v_214 in ipairs(Children_214) do
+                if not not i_214 then return end -- won't run
+                if not not v_214 then return end -- won't run
+                local IsA_129 = v_214.IsA;
+                local Model_131 = v_214:IsA(Model_104);
+                if not Model_131 then return end -- won't run
+                local Name_210 = v_214[Name_183];
+                local Name_210_is_string = (Name_210 == "CakeMix");
+                local var856 = (Name_210_is_string and 14882656);
+            end
+            local var857 = wait(0.1);
+            local Children_215 = workspace:GetChildren();
+            for i_215, v_215 in ipairs(Children_215) do
+                if not not i_215 then return end -- won't run
+                if not not v_215 then return end -- won't run
+                local IsA_130 = v_215.IsA;
+                local Model_132 = v_215:IsA(Model_104);
+                if not Model_132 then return end -- won't run
+                local Name_211 = v_215[Name_183];
+                local Name_211_is_string = (Name_211 == "CakeMix");
+                local var857 = (Name_211_is_string and 14882656);
+            end
+            local var858 = wait(0.1);
+            local Children_216 = workspace:GetChildren();
+            for i_216, v_216 in ipairs(Children_216) do
+                if not not i_216 then return end -- won't run
+                if not not v_216 then return end -- won't run
+                local IsA_131 = v_216.IsA;
+                local Model_133 = v_216:IsA(Model_104);
+                if not Model_133 then return end -- won't run
+                local Name_212 = v_216[Name_183];
+                local Name_212_is_string = (Name_212 == "CakeMix");
+                local var858 = (Name_212_is_string and 14882656);
+            end
+            local var859 = wait(0.1);
+            local Children_217 = workspace:GetChildren();
+            for i_217, v_217 in ipairs(Children_217) do
+                if not not i_217 then return end -- won't run
+                if not not v_217 then return end -- won't run
+                local IsA_132 = v_217.IsA;
+                local Model_134 = v_217:IsA(Model_104);
+                if not Model_134 then return end -- won't run
+                local Name_213 = v_217[Name_183];
+                local Name_213_is_string = (Name_213 == "CakeMix");
+                local var859 = (Name_213_is_string and 14882656);
+            end
+            local var860 = wait(0.1);
+            local Children_218 = workspace:GetChildren();
+            for i_218, v_218 in ipairs(Children_218) do
+                if not not i_218 then return end -- won't run
+                if not not v_218 then return end -- won't run
+                local IsA_133 = v_218.IsA;
+                local Model_135 = v_218:IsA(Model_104);
+                if not Model_135 then return end -- won't run
+                local Name_214 = v_218[Name_183];
+                local Name_214_is_string = (Name_214 == "CakeMix");
+                local var860 = (Name_214_is_string and 14882656);
+            end
+            local var861 = wait(0.1);
+            local Children_219 = workspace:GetChildren();
+            for i_219, v_219 in ipairs(Children_219) do
+                if not not i_219 then return end -- won't run
+                if not not v_219 then return end -- won't run
+                local IsA_134 = v_219.IsA;
+                local Model_136 = v_219:IsA(Model_104);
+                if not Model_136 then return end -- won't run
+                local Name_215 = v_219[Name_183];
+                local Name_215_is_string = (Name_215 == "CakeMix");
+                local var861 = (Name_215_is_string and 14882656);
+            end
+            local var862 = wait(0.1);
+            local Children_220 = workspace:GetChildren();
+            for i_220, v_220 in ipairs(Children_220) do
+                if not not i_220 then return end -- won't run
+                if not not v_220 then return end -- won't run
+                local IsA_135 = v_220.IsA;
+                local Model_137 = v_220:IsA(Model_104);
+                if not Model_137 then return end -- won't run
+                local Name_216 = v_220[Name_183];
+                local Name_216_is_string = (Name_216 == "CakeMix");
+                local var862 = (Name_216_is_string and 14882656);
+            end
+            local var863 = wait(0.1);
+            local Children_221 = workspace:GetChildren();
+            for i_221, v_221 in ipairs(Children_221) do
+                if not not i_221 then return end -- won't run
+                if not not v_221 then return end -- won't run
+                local IsA_136 = v_221.IsA;
+                local Model_138 = v_221:IsA(Model_104);
+                if not Model_138 then return end -- won't run
+                local Name_217 = v_221[Name_183];
+                local Name_217_is_string = (Name_217 == "CakeMix");
+                local var863 = (Name_217_is_string and 14882656);
+            end
+            local var864 = wait(0.1);
+            local Children_222 = workspace:GetChildren();
+            for i_222, v_222 in ipairs(Children_222) do
+                if not not i_222 then return end -- won't run
+                if not not v_222 then return end -- won't run
+                local IsA_137 = v_222.IsA;
+                local Model_139 = v_222:IsA(Model_104);
+                if not Model_139 then return end -- won't run
+                local Name_218 = v_222[Name_183];
+                local Name_218_is_string = (Name_218 == "CakeMix");
+                local var864 = (Name_218_is_string and 14882656);
+            end
+            local var865 = wait(0.1);
+            local Children_223 = workspace:GetChildren();
+            for i_223, v_223 in ipairs(Children_223) do
+                if not not i_223 then return end -- won't run
+                if not not v_223 then return end -- won't run
+                local IsA_138 = v_223.IsA;
+                local Model_140 = v_223:IsA(Model_104);
+                if not Model_140 then return end -- won't run
+                local Name_219 = v_223[Name_183];
+                local Name_219_is_string = (Name_219 == "CakeMix");
+                local var865 = (Name_219_is_string and 14882656);
+            end
+            local var866 = wait(0.1);
+            local Children_224 = workspace:GetChildren();
+            for i_224, v_224 in ipairs(Children_224) do
+                if not not i_224 then return end -- won't run
+                if not not v_224 then return end -- won't run
+                local IsA_139 = v_224.IsA;
+                local Model_141 = v_224:IsA(Model_104);
+                if not Model_141 then return end -- won't run
+                local Name_220 = v_224[Name_183];
+                local Name_220_is_string = (Name_220 == "CakeMix");
+                local var866 = (Name_220_is_string and 14882656);
+            end
+            local var867 = wait(0.1);
+            local Children_225 = workspace:GetChildren();
+            for i_225, v_225 in ipairs(Children_225) do
+                if not not i_225 then return end -- won't run
+                if not not v_225 then return end -- won't run
+                local IsA_140 = v_225.IsA;
+                local Model_142 = v_225:IsA(Model_104);
+                if not Model_142 then return end -- won't run
+                local Name_221 = v_225[Name_183];
+                local Name_221_is_string = (Name_221 == "CakeMix");
+                local var867 = (Name_221_is_string and 14882656);
+            end
+            local var868 = wait(0.1);
+            local Children_226 = workspace:GetChildren();
+            for i_226, v_226 in ipairs(Children_226) do
+                if not not i_226 then return end -- won't run
+                if not not v_226 then return end -- won't run
+                error("C:\\Users\\Administrator\\Downloads\\yetanotherbot\\unveilr\\main:659: too many operations")
+            end
+            error("C:\\Users\\Administrator\\Downloads\\yetanotherbot\\unveilr\\main:1691: C:\\Users\\Administrator\\Downloads\\yetanotherbot\\unveilr\\main:659: too many operations")
+
+        end);
+    end)
+
+end);
