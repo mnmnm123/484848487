@@ -454,7 +454,6 @@ end
       
 local Open = Instance.new("ImageButton")
 local REN = Instance.new("UICorner")
-local UIG = Instance.new("UIGradient")
 
 Open.Name = "Open"
 Open.Parent = dogent
@@ -473,10 +472,6 @@ Open.Draggable = true
 
 REN.CornerRadius = UDim.new(0, 360)
 REN.Parent = Open
-
-UIG.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.10, Color3.fromRGB(255, 127, 0)), ColorSequenceKeypoint.new(0.20, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(0.30, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 0, 255)), ColorSequenceKeypoint.new(0.60, Color3.fromRGB(139, 0, 255)), ColorSequenceKeypoint.new(0.70, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.80, Color3.fromRGB(255, 127, 0)), ColorSequenceKeypoint.new(0.90, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
-UIG.Rotation = 45
-UIG.Parent = Open
 
 local TweenService = game:GetService("TweenService")
 local function shake()
