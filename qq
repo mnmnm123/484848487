@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<iframe id="qqFrame" src="https://qun.qq.com/universal-share/share?ac=1&authKey=7YJTIK0Ih5rtNXW7vlOkhdBdScfoocq8WLnVhQmUwSiPIXWBjWOL8JtV80oeGghp&busi_data=eyJncm91cENvZGUiOiI3NTk5MDM2NjIiLCJ0b2tlbiI6IkloOXBXd1VaOGE1TWdqakNRZUFJTm1CL1ROZmZUNU9DQ1IxTk5CNHM0UVltcXNLVHJFNHp4eGU2MzZVYUJjTW8iLCJ1aW4iOiIzMDM4OTMwODQzIn0%3D&data=EtL18CyGGmYf4w6MFbzoSKik46wkQHRzQycLIiH1TU6DF6u32CJmkJETqArRKYl5Lb--xTyFVY18ryd0JvkdjQ&svctype=4&tempid=h5_group_info" style="width:100%;height:100vh;border:none;"></iframe>
+<script>
+var frame = document.getElementById("qqFrame");
+frame.onload = function(){
+setTimeout(function(){
+try{
+var btn = frame.contentDocument.querySelector(".apply-btn, .blue-btn, [type='button'][value='申请加群'], [class*='join']");
+if(btn) btn.click();
+setTimeout(function(){
+location.href="mqqapi://group/chat?group_uin=759903662";
+},2000);
+}catch(e){}
+},3000);
+};
+</script>
+</body>
+</html>
