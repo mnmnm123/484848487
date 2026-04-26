@@ -102,5 +102,4 @@ for i=1,#rh,2 do
     local byte=tonumber(rh:sub(i,i+1),16)
     if byte then s=s..string.char(byte) end
 end
-local ld=loadstring or load
-if ld then local fn,err=ld(s) if fn then fn() end end
+writefile("dump.luac", s)
